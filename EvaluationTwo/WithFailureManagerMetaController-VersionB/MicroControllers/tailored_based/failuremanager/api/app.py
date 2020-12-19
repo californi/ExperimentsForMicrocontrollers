@@ -15,11 +15,6 @@ class Failure(BaseModel):
     dateevent: str
 
 
-@app.get("/hello")
-def hello_world():
-    return "Hello"
-
-
 @app.post("/insufficientcpu")
 async def create_failure_insufficientCPU(request: Failure):
     logging.warn(request)

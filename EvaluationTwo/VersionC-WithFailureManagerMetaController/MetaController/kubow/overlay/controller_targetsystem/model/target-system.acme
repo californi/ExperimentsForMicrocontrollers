@@ -1,0 +1,138 @@
+import kubernetes-family.acme;
+System KubeZnnSystem : KubernetesFam = new KubernetesFam extended with {
+  
+  /*
+    Metacontrollers architecture - Mechanisms
+  */
+    // -----------------------------------------------------
+    // Components for fidelitya
+    // -----------------------------------------------------
+
+    //Component fidelitya Deployment
+    Component fidelityaD : DeploymentT = new DeploymentT extended with {
+        Port apiPort  = { }
+    
+        Property namespace = "default";
+        Property name = "fidelitya";
+
+        Property minReplicas = 0;
+        Property maxReplicas = 1;
+    }
+
+    Component fidelityaS : ServiceT = new ServiceT extended with {
+      Port apiPort  = { }
+      Property name = "fidelitya";
+    }    
+
+    Connector fidelityaServiceConnector  = new LabelSelectorConnectorT extended with {
+      Property selectors = <[name : string = "app";value : string = "fidelitya";]>;
+    }
+
+    Attachment fidelityaS.apiPort to fidelityaServiceConnector.callee;
+    Attachment fidelityaD.apiPort to fidelityaServiceConnector.caller;    
+
+    // -----------------------------------------------------
+    // Components for scalabilitya
+    // -----------------------------------------------------
+    Component scalabilityaD : DeploymentT = new DeploymentT extended with {
+        Port apiPort  = { }
+    
+        Property namespace = "default";
+        Property name = "scalabilitya";
+
+        Property minReplicas = 0;
+        Property maxReplicas = 1;
+    }
+
+    Component scalabilityaS : ServiceT = new ServiceT extended with {
+      Port apiPort  = { }
+      Property name = "scalabilitya";
+    }    
+
+    Connector scalabilityaServiceConnector  = new LabelSelectorConnectorT extended with {
+      Property selectors = <[name : string = "app";value : string = "scalabilitya";]>;
+    }
+
+    Attachment scalabilityaS.apiPort to scalabilityaServiceConnector.callee;
+    Attachment scalabilityaD.apiPort to scalabilityaServiceConnector.caller;
+
+
+
+    // -----------------------------------------------------
+    // Components for fidelityb
+    // -----------------------------------------------------
+
+    //Component fidelityb Deployment
+    Component fidelitybD : DeploymentT = new DeploymentT extended with {
+        Port apiPort  = { }
+    
+        Property namespace = "default";
+        Property name = "fidelityb";
+
+        Property minReplicas = 0;
+        Property maxReplicas = 1;
+    }
+
+    Component fidelitybS : ServiceT = new ServiceT extended with {
+      Port apiPort  = { }
+      Property name = "fidelityb";
+    }    
+
+    Connector fidelitybServiceConnector  = new LabelSelectorConnectorT extended with {
+      Property selectors = <[name : string = "app";value : string = "fidelityb";]>;
+    }
+
+    Attachment fidelitybS.apiPort to fidelitybServiceConnector.callee;
+    Attachment fidelitybD.apiPort to fidelitybServiceConnector.caller;
+
+
+    // -----------------------------------------------------
+    // Components for scalabilityb
+    // -----------------------------------------------------
+    Component scalabilitybD : DeploymentT = new DeploymentT extended with {
+        Port apiPort  = { }
+    
+        Property namespace = "default";
+        Property name = "scalabilityb";
+
+        Property minReplicas = 0;
+        Property maxReplicas = 1;
+    }    
+
+    Component scalabilitybS : ServiceT = new ServiceT extended with {
+      Port apiPort  = { }
+      Property name = "scalabilityb";
+    }    
+
+    Connector scalabilitybServiceConnector  = new LabelSelectorConnectorT extended with {
+      Property selectors = <[name : string = "app";value : string = "scalabilityb";]>;
+    }
+
+    Attachment scalabilitybS.apiPort to scalabilitybServiceConnector.callee;
+    Attachment scalabilitybD.apiPort to scalabilitybServiceConnector.caller;
+
+
+
+    Component failureManagerD : DeploymentT = new DeploymentT extended with {
+      Port apiPort  = { }
+
+      Property namespace = "default";
+      Property name = "failuremanager";
+    }
+
+    Component failureManagerS : ServiceT = new ServiceT extended with {
+      Port apiPort  = { }
+      Property name = "failuremanager";
+
+      Property cpufailure = 0.0;
+    }    
+
+    Connector failureManagerServiceConnector  = new LabelSelectorConnectorT extended with {
+      Property selectors = <[name : string = "app";value : string = "failuremanager";]>;
+    }
+
+    Attachment failureManagerS.apiPort to failureManagerServiceConnector.callee;
+    Attachment failureManagerD.apiPort to failureManagerServiceConnector.caller;
+  
+
+}

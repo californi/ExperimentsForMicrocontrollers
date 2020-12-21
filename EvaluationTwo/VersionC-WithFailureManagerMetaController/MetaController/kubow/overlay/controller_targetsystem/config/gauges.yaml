@@ -1,0 +1,88 @@
+gauge-types:
+  KubowGaugeT:
+    commands:
+      setServiceProperty: ServiceT.setServiceProperty (Object)
+      setDeploymentInfo: DeploymentT.setDeploymentInfo (Object)
+      setDeploymentProperty: DeploymentT.setDeploymentProperty (Object)
+    setupParams:
+      targetIP:
+        type: String
+        default: "127.0.0.1"
+      propertyPath:
+        type: String
+        default: ""
+      propertyName:
+        type: String
+        default: ""
+      beaconPeriod:
+        type: long
+        default: 3000
+      javaClass:
+        type: String
+        default: "br.unifor.kubow.gauges.KubowGauge"
+    configParams:
+      targetProbeType:
+        type: String
+        default: ~
+    comment: ""
+gauge-instances:
+
+  KubeFidelityaInfoGauge:
+    type: KubowGaugeT
+    model: "KubeZnnSystem:Acme"
+    commands:
+      "setDeploymentInfo()": fidelityaD.setDeploymentInfo($<jsonValue>)
+    setupValues:
+      targetIP: "127.0.0.1"
+    configValues:
+      targetProbeType: deployments.default.fidelitya.probe@*
+
+  KubeScalabilityaInfoGauge:
+    type: KubowGaugeT
+    model: "KubeZnnSystem:Acme"
+    commands:
+      "setDeploymentInfo()": scalabilityaD.setDeploymentInfo($<jsonValue>)
+    setupValues:
+      targetIP: "127.0.0.1"
+    configValues:
+      targetProbeType: deployments.default.scalabilitya.probe@*      
+
+  KubeFidelitybInfoGauge:
+    type: KubowGaugeT
+    model: "KubeZnnSystem:Acme"
+    commands:
+      "setDeploymentInfo()": fidelitybD.setDeploymentInfo($<jsonValue>)
+    setupValues:
+      targetIP: "127.0.0.1"
+    configValues:
+      targetProbeType: deployments.default.fidelityb.probe@*
+
+  KubeScalabilitybInfoGauge:
+    type: KubowGaugeT
+    model: "KubeZnnSystem:Acme"
+    commands:
+      "setDeploymentInfo()": scalabilitybD.setDeploymentInfo($<jsonValue>)
+    setupValues:
+      targetIP: "127.0.0.1"
+    configValues:
+      targetProbeType: deployments.default.scalabilityb.probe@*            
+
+  KubeFailureManagerInfoGauge:
+    type: KubowGaugeT
+    model: "KubeZnnSystem:Acme"
+    commands:
+      "setDeploymentInfo()": failureManagerD.setDeploymentInfo($<jsonValue>)
+    setupValues:
+      targetIP: "127.0.0.1"
+    configValues:
+      targetProbeType: deployments.default.failuremanager.probe@*     
+
+  CpufailureGauge:
+    type: KubowGaugeT
+    model: "KubeZnnSystem:Acme"
+    commands:
+      "setServiceProperty()": "failureManagerS.setServiceProperty($<jsonValue>,<cpufailure>)"
+    setupValues:
+      targetIP: "127.0.0.1"
+    configValues:
+      targetProbeType: default-failuremanager-cpufailure@*      

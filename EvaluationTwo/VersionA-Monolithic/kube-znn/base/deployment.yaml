@@ -1,0 +1,87 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kube-znn
+  labels:
+    app: kube-znn
+    version: v1
+spec:
+  selector:
+    matchLabels:
+      app: kube-znn
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: kube-znn
+        version: v1
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "9145"
+    spec:
+      volumes:
+        - name: shared-files
+          emptyDir: {}
+        - name: nginx-config-volume
+          configMap:
+            name: nginx-config
+      affinity:
+        nodeAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 1
+            preference:
+              matchExpressions:
+              - key: localhost.k8s.io/layer
+                operator: In
+                values:
+                - web
+      containers:
+        - image: cmendes/znn:600k
+          name: znn
+          env:
+          - name: DB_HOST
+            value: "kube-znn-db"
+          - name: DB_NAME
+            value: "znn"
+          - name: DB_PASS
+            value: "znn_pass"
+          volumeMounts:
+            - name: shared-files
+              mountPath: /var/www/html
+          ports:
+          - name: fpm
+            containerPort: 9000
+          lifecycle:
+            postStart:
+              exec:
+                command: ["/bin/sh", "-c", "cp -r /www/. /var/www/html"]
+        - image: openresty/openresty:alpine-fat
+          name: nginx
+          volumeMounts:
+            - name: shared-files
+              mountPath: /var/www/html
+            - name: nginx-config-volume
+              mountPath: /usr/local/openresty/nginx/conf/nginx.conf
+              subPath: nginx.conf
+            - name: nginx-config-volume
+              mountPath: /etc/nginx/nginx-lua-prometheus/prometheus_resty_counter.lua
+              subPath: prometheus_resty_counter.lua
+            - name: nginx-config-volume
+              mountPath: /etc/nginx/nginx-lua-prometheus/prometheus_keys.lua
+              subPath: prometheus_keys.lua
+            - name: nginx-config-volume
+              mountPath: /etc/nginx/nginx-lua-prometheus/prometheus.lua
+              subPath: prometheus.lua
+          livenessProbe:
+            httpGet:
+              path: /liveness.php
+              port: 80
+          readinessProbe:
+            httpGet:
+              path: /readiness.php
+              port: 80
+          ports:
+          - name: http
+            containerPort: 80
+          - name: exporter
+            containerPort: 9145

@@ -52,7 +52,7 @@ kubectl apply -k .\EvaluationTwo\WithFailureManagerMetaController-VersionB\MetaC
 
 # --------------------------------------------------------
 ## Testing and Analsys
-kubectl apply -k .\Testing\k6\
+kubectl apply -k .\tools\k6\
 
 ## Generating logs
 kubectl logs pod/metacontroller-kubow-7d87f75854-ccxf6 >> metacontrol.log
@@ -62,10 +62,10 @@ while (1) {clear; kubectl get all; sleep 5}
 while (1) {clear; kubectl describe deployment kube-znn; sleep 5}
 
 ### query prometheus in K8s
-kubectl port-forward pod/prometheus-d4499d495-8c2nf 9090:9090
+kubectl port-forward pod/prometheus-d4499d495-5hb44 9090:9090
 
 ### Grafana
-kubectl port-forward pod/grafana-b659fcdd9-8r9h5 3000:3000
+kubectl port-forward pod/grafana-b659fcdd9-r5sck 3000:3000
 
 #---------------------------------------------------
 ## Cleaning environment
@@ -84,4 +84,4 @@ kubectl delete -k .\EvaluationTwo\WithFailureManagerMetaController-VersionB\Micr
 
 kubectl delete -f .\EvaluationTwo\WithFailureManagerMetaController-VersionB\MicroControllers\tailored_based\k8s\
 kubectl delete -k .\EvaluationTwo\WithFailureManagerMetaController-VersionB\MetaController\kubow\overlay\controller_targetsystem\
-kubectl delete -k .\Testing\k6\
+kubectl delete -k .\tools\k6\

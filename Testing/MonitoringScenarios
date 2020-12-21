@@ -1,0 +1,66 @@
+## Scenario 1 - Monolithic-VersionA
+
+## kube-znn
+## kubow
+sum(rate(container_cpu_usage_seconds_total{image!="", pod=~"kube-znn.*"}[5m]))
+sum(rate(container_memory_usage_bytes{image!="", pod=~"kube-znn.*"}[5m]))
+sum(rate(container_cpu_usage_seconds_total{image!="", pod=~"kubow.*"}[5m]))
+sum(rate(container_memory_usage_bytes{image!="", pod=~"kubow.*"}[5m]))
+
+
+
+## Scenario 2 - Monolithic-VersionA
+
+## kube-znn
+## fidelitya
+## scalabilitya
+sum(rate(container_cpu_usage_seconds_total{image!="", pod=~"kube-znn.*"}[5m]))
+sum(rate(container_memory_usage_bytes{image!="", pod=~"kube-znn.*"}[5m]))
+sum(rate(container_cpu_usage_seconds_total{image!="", pod=~"fidelitya.*"}[5m]))
+sum(rate(container_memory_usage_bytes{image!="", pod=~"fidelitya.*"}[5m]))
+sum(rate(container_cpu_usage_seconds_total{image!="", pod=~"scalabilitya.*"}[5m]))
+sum(rate(container_memory_usage_bytes{image!="", pod=~"scalabilitya.*"}[5m]))
+
+
+## Scenario 3 - Monolithic-VersionA
+
+## kube-znn
+## fidelitya
+## scalabilitya
+sum(rate(container_cpu_usage_seconds_total{image!="", pod=~"kube-znn.*"}[5m]))
+sum(rate(container_memory_usage_bytes{image!="", pod=~"kube-znn.*"}[5m]))
+sum(rate(container_cpu_usage_seconds_total{image!="", pod=~"fidelitya.*"}[5m]))
+sum(rate(container_memory_usage_bytes{image!="", pod=~"fidelitya.*"}[5m]))
+sum(rate(container_cpu_usage_seconds_total{image!="", pod=~"scalabilitya.*"}[5m]))
+sum(rate(container_memory_usage_bytes{image!="", pod=~"scalabilitya.*"}[5m]))
+
+
+
+## Scenario 4 - Monolithic-VersionA
+
+## kube-znn
+## failure
+## fidelitya
+## scalabilitya
+## fidelityb
+## scalabilityb
+## metacontroller
+sum(rate(container_cpu_usage_seconds_total{image!="", pod=~"kube-znn.*"}[5m]))
+sum(rate(container_memory_usage_bytes{image!="", pod=~"kube-znn.*"}[5m]))
+sum(rate(container_cpu_usage_seconds_total{image!="", pod=~"failure.*"}[5m]))
+sum(rate(container_memory_usage_bytes{image!="", pod=~"failure.*"}[5m]))
+sum(rate(container_cpu_usage_seconds_total{image!="", pod=~"fidelitya.*"}[5m]))
+sum(rate(container_memory_usage_bytes{image!="", pod=~"fidelitya.*"}[5m]))
+sum(rate(container_cpu_usage_seconds_total{image!="", pod=~"scalabilitya.*"}[5m]))
+sum(rate(container_memory_usage_bytes{image!="", pod=~"scalabilitya.*"}[5m]))
+sum(rate(container_cpu_usage_seconds_total{image!="", pod=~"fidelityb.*"}[5m]))
+sum(rate(container_memory_usage_bytes{image!="", pod=~"fidelityb.*"}[5m]))
+sum(rate(container_cpu_usage_seconds_total{image!="", pod=~"scalabilityb.*"}[5m]))
+sum(rate(container_memory_usage_bytes{image!="", pod=~"scalabilityb.*"}[5m]))
+sum(rate(container_cpu_usage_seconds_total{image!="", pod=~"metacontroller.*"}[5m]))
+sum(rate(container_memory_usage_bytes{image!="", pod=~"metacontroller.*"}[5m]))
+
+# Criar um script para pegar as taxas acima e somar separadamente CPU e Memoria
+# Verificar como iremos analisar ScalesUp/Down e Rollouts (poderiamos criar um monitor de eventos especificos)
+    - Esse script poderia executar enquanto o k6 estiver no status "Runnning"]
+    

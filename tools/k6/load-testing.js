@@ -5,16 +5,16 @@ const epochSeconds = () => new Date().getTime() / 1000;
 
 export let options = {
   teardownTimeout: '100s',
-   stages: [
-     {
-       duration: '180s',
-       target: 400
-     },
-     {
+  stages: [
+    {
+      duration: '180s',
+      target: 400
+    },
+    {
       duration: '180s',
       target: 0
     }
-   ]
+  ]
 };
 
 export function setup() {
@@ -25,7 +25,7 @@ export function setup() {
   };
 };
 
-export default function() {
+export default function () {
   // https://k6.io/blog/how-to-generate-a-constant-request-rate-in-k6
   /**
    * Request Rate = (VU * R) / T
@@ -36,7 +36,7 @@ export default function() {
    */
   const before = new Date().getTime();
   const T = 2;
-  
+
   for (let i = 0; i < 2; i++) {
     const res = http.get('http://nginx-ingress.default.svc/news.php');
     check(res, {
@@ -47,7 +47,7 @@ export default function() {
   const after = new Date().getTime();
   const diff = (after - before) / 1000;
   const remainder = T - diff;
-  
+
   if (remainder > 0) {
     sleep(remainder);
   } else {
@@ -70,7 +70,7 @@ export function teardown(data) {
       'Content-Type': 'application/json',
     },
   };
-  
+
   const res = http.post(data.metrics_exporter, payload, params);
   console.log(res.status);
 }

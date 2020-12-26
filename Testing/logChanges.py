@@ -6,10 +6,11 @@ import re
 def main():
 
     config.load_kube_config()
-    v1 = client.CoreV1Api()
+    core = client.CoreV1Api()
+    apps = client.AppsV1Api()
     w = watch.Watch()
 
-    for event in w.stream(v1.list_event_for_all_namespaces):
+    for event in w.stream(core.list_event_for_all_namespaces):
 
         event = {"name": event['object'].metadata.name,
                  "type": event['object'].type,
@@ -22,6 +23,11 @@ def main():
             'scale', str(event["message"]), re.IGNORECASE)
 
         if resultNamePod and scaleMessage:
+            current_deployment = apps.read_namespaced_deployment(
+                "kube-znn", "default")
+            current_image = current_deployment.spec.template.spec.containers[0].image
+            event["image"] = current_image
+
             logging.warning(event)
 
     logging.info("Finished pod stream.")

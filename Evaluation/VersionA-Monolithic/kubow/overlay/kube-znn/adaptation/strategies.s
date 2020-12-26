@@ -3,6 +3,7 @@ import model "KubeZnnSystem:Acme" { KubeZnnSystem as M, KubernetesFam as K };
 import lib "tactics.s";
 
 define boolean highMode = M.kubeZnnD.replicasHigh >= M.kubeZnnD.desiredReplicas;
+//define boolean highMode = M.kubeZnnS.traffic >= 0.50;
 
 
 define boolean sloRed = M.kubeZnnS.slo <= 0.95;

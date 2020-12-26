@@ -1,1 +1,0 @@
-# Scalabiliy microcontroller

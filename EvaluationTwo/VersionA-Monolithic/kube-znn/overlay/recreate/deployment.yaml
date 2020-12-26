@@ -1,9 +1,0 @@
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  labels:
-    app: kube-znn
-  name: kube-znn
-spec:
-  strategy:
-    type: Recreate

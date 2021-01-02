@@ -11,9 +11,6 @@ kubectl apply -k .\tools\monitoring\
 kubectl apply -k .\TargetSystem\kube-znn\overlay\default\
 kubectl apply -f .\tools\nginxc-ingress\
 
-## testing another ZNN version
-#########kubectl apply -k .\Evaluation\VersionA-Monolithic\kube-znn\overlay\default\
-
 ## Evaluation
 kubectl apply -k .\Evaluation\VersionA-Monolithic\kubow\overlay\kube-znn
 
@@ -37,18 +34,13 @@ kubectl delete -k .\tools\monitoring\
 kubectl delete -k .\TargetSystem\kube-znn\overlay\default\
 kubectl delete -f .\tools\nginxc-ingress\
 
-## another version of znn
-kubectl delete -k .\Evaluation\VersionA-Monolithic\kube-znn\overlay\default\
 
-
-## Evaluation One
+## Evaluation
 kubectl delete -k .\Evaluation\VersionA-Monolithic\kubow\overlay\kube-znn
 
 
 kubectl delete -k .\Evaluation\VersionB-Microcontrollers\fidelitya_microcontroller\kubow\overlay\kube-znn\
 kubectl delete -k .\Evaluation\VersionB-Microcontrollers\scalabilitya_microcontroller\kubow\overlay\kube-znn\
-
-
 
 
 kubectl delete -k .\Evaluation\VersionC-WithFailureManagerMetaController\MicroControllers\kubow_based\fidelitya_microcontroller\kubow\overlay\kube-znn\
@@ -65,7 +57,7 @@ kubectl delete -k .\tools\k6\
 #---------------------------------------------------
 
 ## Generating logs
-kubectl logs pod/kubow-7b5b7f747d-q2g4b >> kubowCA.log
+kubectl logs pod/kubow-5688b4798c-2z7jq >> kubowCA.log
 
 ## Monitoring
 while (1) {clear; kubectl get all; sleep 5}

@@ -19,7 +19,7 @@ tactic addReplica() {
   action {
     M.scaleUp(M.kubeZnnD, 1);
   }
-  effect @[10000] {
+  effect @[5000] {
     futureReplicas' == M.kubeZnnD.desiredReplicas;
   }
 }
@@ -32,7 +32,7 @@ tactic removeReplica() {
   action {
     M.scaleDown(M.kubeZnnD, 1);
   }
-  effect @[10000] {
+  effect @[5000] {
     futureReplicas' == M.kubeZnnD.desiredReplicas;
   }
 }
@@ -49,7 +49,7 @@ tactic lowerFidelity() {
       M.rollOut(M.kubeZnnD, "znn", textModeImage);
     }
   }
-  effect @[10000] {
+  effect @[5000] {
     lowMode;
   }
 }
@@ -66,7 +66,7 @@ tactic raiseFidelity() {
       M.rollOut(M.kubeZnnD, "znn", highModeImage);
     }
   }
-  effect @[10000] {
+  effect @[5000] {
     highMode || lowMode;
   }
 }

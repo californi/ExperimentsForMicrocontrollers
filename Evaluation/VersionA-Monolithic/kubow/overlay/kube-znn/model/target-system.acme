@@ -1,5 +1,7 @@
 import kubernetes-family.acme;
 System KubeZnnSystem : KubernetesFam = new KubernetesFam extended with {
+ 
+ 
   Component kubeZnnDbS : ServiceT = new ServiceT extended with {
     Port sqlPort  = { }
     Port connectionSqlPort  = { }
@@ -21,8 +23,8 @@ System KubeZnnSystem : KubernetesFam = new KubernetesFam extended with {
     Port sqlPort  = { }
     Property namespace = "default";
     Property hasAlternativeImages = true;
-    Property maxReplicas = 3;
-    Property alternativeImages = <"cmendes/kube-znn:text", "cmendes/kube-znn:200k","cmendes/kube-znn:600k">;
+    Property maxReplicas = 10;
+    Property alternativeImages = <"cmendes/znn:100k", "cmendes/znn:200k","cmendes/znn:600k">;
     Property name = "kube-znn";
     Property replicasHigh = 0;
     Property replicasLow = 0;

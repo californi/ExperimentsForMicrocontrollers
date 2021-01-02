@@ -45,7 +45,7 @@ probes:
     type: java
     javaInfo:
       class: br.unifor.kubow.probes.PrometheusProbe
-      period: 5000
+      period: 20000
       args.length: 4
       args.0: "default"
       args.1: "kube-znn"
@@ -58,7 +58,7 @@ probes:
     type: java
     javaInfo:
       class: br.unifor.kubow.probes.PrometheusProbe
-      period: 5000
+      period: 20000
       args.length: 4
       args.0: "default"
       args.1: "kube-znn"
@@ -71,7 +71,7 @@ probes:
     type: java
     javaInfo:
       class: br.unifor.kubow.probes.PrometheusProbe
-      period: 5000
+      period: 20000
       args.length: 4
       args.0: "default"
       args.1: "kube-znn"

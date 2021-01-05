@@ -24,7 +24,7 @@ tactic lowerFidelity() {
     }
   }
   effect @[10000] {
-    lowMode;
+    highMode || lowMode;
   }
 }
 

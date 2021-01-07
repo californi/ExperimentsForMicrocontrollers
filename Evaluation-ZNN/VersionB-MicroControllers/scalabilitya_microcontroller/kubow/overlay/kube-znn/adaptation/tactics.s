@@ -11,8 +11,8 @@ tactic addReplica() {
   action {
     M.scaleUp(M.kubeZnnD, 1);
   }
-  effect @[5000] {
-    futureReplicas' == M.kubeZnnD.desiredReplicas;
+  effect @[10000] {
+    futureReplicas == M.kubeZnnD.desiredReplicas;
   }
 }
 
@@ -24,7 +24,7 @@ tactic removeReplica() {
   action {
     M.scaleDown(M.kubeZnnD, 1);
   }
-  effect @[5000] {
-    futureReplicas' == M.kubeZnnD.desiredReplicas;
+  effect @[10000] {
+    futureReplicas == M.kubeZnnD.desiredReplicas;
   }
 }

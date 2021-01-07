@@ -11,32 +11,6 @@ define string textModeImage = "cmendes/znn:400k";
 
 define boolean isStable = M.kubeZnnD.stability == 0;
 
-tactic addReplica() {
-  int futureReplicas = M.kubeZnnD.desiredReplicas + 1;
-  condition {
-    M.kubeZnnD.maxReplicas > M.kubeZnnD.desiredReplicas;
-  }
-  action {
-    M.scaleUp(M.kubeZnnD, 1);
-  }
-  effect @[5000] {
-    futureReplicas' == M.kubeZnnD.desiredReplicas;
-  }
-}
-
-tactic removeReplica() {
-  int futureReplicas = M.kubeZnnD.desiredReplicas - 1;
-  condition {
-    isStable && M.kubeZnnD.minReplicas < M.kubeZnnD.desiredReplicas;
-  }
-  action {
-    M.scaleDown(M.kubeZnnD, 1);
-  }
-  effect @[5000] {
-    futureReplicas' == M.kubeZnnD.desiredReplicas;
-  }
-}
-
 tactic lowerFidelity() {
   condition {
     highMode || lowMode;
@@ -49,7 +23,7 @@ tactic lowerFidelity() {
       M.rollOut(M.kubeZnnD, "znn", textModeImage);
     }
   }
-  effect @[5000] {
+  effect @[10000] {
     lowMode;
   }
 }
@@ -66,7 +40,7 @@ tactic raiseFidelity() {
       M.rollOut(M.kubeZnnD, "znn", highModeImage);
     }
   }
-  effect @[5000] {
+  effect @[10000] {
     highMode || lowMode;
   }
 }

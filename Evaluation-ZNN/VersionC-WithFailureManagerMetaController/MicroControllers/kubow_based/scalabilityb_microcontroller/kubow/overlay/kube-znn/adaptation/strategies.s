@@ -23,7 +23,7 @@ strategy ImproveSlo [ canAddReplica && sloRed ] {
 /*
  * ----
  */
-strategy ReduceCost [ sloGreen && highMode ] {
+strategy ReduceCost [ sloGreen ] {
   t0: (sloGreen && canRemoveReplica && highMode) -> removeReplica() @[20000 /*ms*/] {
     t0a: (success) -> done;
   }

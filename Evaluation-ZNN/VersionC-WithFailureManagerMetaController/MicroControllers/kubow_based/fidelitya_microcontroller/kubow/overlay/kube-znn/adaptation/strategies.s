@@ -26,7 +26,7 @@ strategy ImproveSlo [ sloRed ] {
 /*
  * ----
  */
-strategy ImproveFidelity [ sloGreen && !highMode ] {
+strategy ImproveFidelity [ sloGreen ] {
   t0: (sloGreen && !highMode) -> raiseFidelity() @[20000 /*ms*/] {
     t0a: (success) -> done;
   }

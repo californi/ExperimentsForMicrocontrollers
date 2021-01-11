@@ -47,35 +47,65 @@ gauge-instances:
     configValues:
       targetProbeType: default-kube-znn-traffic@*
   
-  ReplicasHighGauge:
+  ReplicasHighaGauge:
     type: KubowGaugeT
     model: "KubeZnnSystem:Acme"
     commands:
-      "setDeploymentProperty()": "kubeZnnD.setDeploymentProperty($<jsonValue>,<replicasHigh>)"
+      "setDeploymentProperty()": "kubeZnnD.setDeploymentProperty($<jsonValue>,<replicasHigha>)"
     setupValues:
       targetIP: "127.0.0.1"
     configValues:
-      targetProbeType: default-kube-znn-replicasHigh@*
+      targetProbeType: default-kube-znn-replicasHigha@*
     
-  ReplicasLowGauge:
+  ReplicasLowaGauge:
     type: KubowGaugeT
     model: "KubeZnnSystem:Acme"
     commands:
-      "setDeploymentProperty()": "kubeZnnD.setDeploymentProperty($<jsonValue>,<replicasLow>)"
+      "setDeploymentProperty()": "kubeZnnD.setDeploymentProperty($<jsonValue>,<replicasLowa>)"
     setupValues:
       targetIP: "127.0.0.1"
     configValues:
-      targetProbeType: default-kube-znn-replicasLow@*
+      targetProbeType: default-kube-znn-replicasLowa@*
 
-  ReplicasTextGauge:
+  ReplicasTextaGauge:
     type: KubowGaugeT
     model: "KubeZnnSystem:Acme"
     commands:
-      "setDeploymentProperty()": "kubeZnnD.setDeploymentProperty($<jsonValue>,<replicasText>)"
+      "setDeploymentProperty()": "kubeZnnD.setDeploymentProperty($<jsonValue>,<replicasTexta>)"
     setupValues:
       targetIP: "127.0.0.1"
     configValues:
-      targetProbeType: default-kube-znn-replicasText@*
+      targetProbeType: default-kube-znn-replicasTexta@*
+
+  ReplicasHighbGauge:
+    type: KubowGaugeT
+    model: "KubeZnnSystem:Acme"
+    commands:
+      "setDeploymentProperty()": "kubeZnnD.setDeploymentProperty($<jsonValue>,<replicasHighb>)"
+    setupValues:
+      targetIP: "127.0.0.1"
+    configValues:
+      targetProbeType: default-kube-znn-replicasHighb@*
+    
+  ReplicasLowbGauge:
+    type: KubowGaugeT
+    model: "KubeZnnSystem:Acme"
+    commands:
+      "setDeploymentProperty()": "kubeZnnD.setDeploymentProperty($<jsonValue>,<replicasLowb>)"
+    setupValues:
+      targetIP: "127.0.0.1"
+    configValues:
+      targetProbeType: default-kube-znn-replicasLowb@*
+
+  ReplicasTextbGauge:
+    type: KubowGaugeT
+    model: "KubeZnnSystem:Acme"
+    commands:
+      "setDeploymentProperty()": "kubeZnnD.setDeploymentProperty($<jsonValue>,<replicasTextb>)"
+    setupValues:
+      targetIP: "127.0.0.1"
+    configValues:
+      targetProbeType: default-kube-znn-replicasTextb@*
 
   StabilityGauge:
     type: KubowGaugeT

@@ -12,6 +12,7 @@ spec:
       labels:
         app: scalabilityb
     spec:
+      priorityClassName: high-priority
       affinity:
         nodeAffinity:
           preferredDuringSchedulingIgnoredDuringExecution:

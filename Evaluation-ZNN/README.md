@@ -3,7 +3,7 @@
 ## Cluster configurations - defining cluster (before of all, kubectl and minikube must be installed)
 
 minikube delete
-minikube start --cpus=6 --vm-driver hyperv --hyperv-virtual-switch "Primary Virtual Switch" --kubernetes-version=v1.16.10
+minikube start --cpus=5 --memory=8192 --vm-driver hyperv --hyperv-virtual-switch "Primary Virtual Switch" --kubernetes-version=v1.16.10
 minikube addons enable ingress
 
 #---------------------------------------------------#---------------------------------------------------
@@ -37,6 +37,8 @@ kubectl delete -k .\Evaluation-ZNN\tools\k6\
 
 #---------------------------------------------------#---------------------------------------------------
 ## creating environment: Configuration C - Always - delete and re-create the Cluster
+
+kubectl apply -f .\Evaluation-ZNN\VersionC-WithFailureManagerMetaController\MetaController\priorityObjectsK8s\
 kubectl apply -k .\Evaluation-ZNN\tools\monitoring\
 kubectl apply -k .\Evaluation-ZNN\VersionC-WithFailureManagerMetaController\TargetSystem\kube-znn\overlay\default\
 kubectl apply -f .\Evaluation-ZNN\tools\nginxc-ingress\
@@ -49,6 +51,17 @@ kubectl apply -k .\Evaluation-ZNN\VersionC-WithFailureManagerMetaController\Meta
 kubectl apply -k .\Evaluation-ZNN\tools\k6\
 
 
+kubectl delete -f .\Evaluation-ZNN\VersionC-WithFailureManagerMetaController\MetaController\priorityObjectsK8s\
+kubectl delete -k .\Evaluation-ZNN\tools\monitoring\
+kubectl delete -k .\Evaluation-ZNN\VersionC-WithFailureManagerMetaController\TargetSystem\kube-znn\overlay\default\
+kubectl delete -f .\Evaluation-ZNN\tools\nginxc-ingress\
+kubectl delete -k .\Evaluation-ZNN\VersionC-WithFailureManagerMetaController\MicroControllers\kubow_based\fidelitya_microcontroller\kubow\overlay\kube-znn\
+kubectl delete -k .\Evaluation-ZNN\VersionC-WithFailureManagerMetaController\MicroControllers\kubow_based\scalabilitya_microcontroller\kubow\overlay\kube-znn\
+kubectl delete -k .\Evaluation-ZNN\VersionC-WithFailureManagerMetaController\MicroControllers\kubow_based\fidelityb_microcontroller\kubow\overlay\kube-znn\
+kubectl delete -k .\Evaluation-ZNN\VersionC-WithFailureManagerMetaController\MicroControllers\kubow_based\scalabilityb_microcontroller\kubow\overlay\kube-znn\
+kubectl delete -f .\Evaluation-ZNN\VersionC-WithFailureManagerMetaController\MicroControllers\tailored_based\k8s\
+kubectl delete -k .\Evaluation-ZNN\VersionC-WithFailureManagerMetaController\MetaController\kubow\overlay\controller_targetsystem\
+kubectl delete -k .\Evaluation-ZNN\tools\k6\
 
 
 #---------------------------------------------------#---------------------------------------------------

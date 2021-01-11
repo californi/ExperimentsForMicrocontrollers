@@ -12,6 +12,7 @@ spec:
       labels:
         app: fidelitya
     spec:
+      priorityClassName: high-priority
       affinity:
         nodeAffinity:
           preferredDuringSchedulingIgnoredDuringExecution:

@@ -11,6 +11,7 @@ spec:
       labels:
         app: metacontroller-kubow
     spec:
+      priorityClassName: high-priority
       affinity:
         nodeAffinity:
           preferredDuringSchedulingIgnoredDuringExecution:

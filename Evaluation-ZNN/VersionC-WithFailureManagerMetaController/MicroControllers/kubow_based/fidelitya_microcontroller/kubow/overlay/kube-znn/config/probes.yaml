@@ -1,6 +1,6 @@
 probes:
-  ReplicasHighProbe:
-    alias: kube-znn.replicasHigh.probe
+  ReplicasHighaProbe:
+    alias: kube-znn.replicasHigha.probe
     location: 127.0.0.1
     type: java
     javaInfo:
@@ -9,12 +9,12 @@ probes:
       args.length: 4
       args.0: "default"
       args.1: "kube-znn"
-      args.2: "replicasHigh"
+      args.2: "replicasHigha"
       args.3: "count(kube_pod_container_info{image=\"cmendes/znn:800k\"})"
   
    
-  ReplicasLowProbe:
-    alias: kube-znn.replicasLow.probe
+  ReplicasLowaProbe:
+    alias: kube-znn.replicasLowa.probe
     location: 127.0.0.1
     type: java
     javaInfo:
@@ -23,11 +23,11 @@ probes:
       args.length: 4
       args.0: "default"
       args.1: "kube-znn"
-      args.2: "replicasLow"
+      args.2: "replicasLowa"
       args.3: "count(kube_pod_container_info{image=\"cmendes/znn:600k\"})"
 
-  ReplicasTextProbe:
-    alias: kube-znn.replicasText.probe
+  ReplicasTextaProbe:
+    alias: kube-znn.replicasTexta.probe
     location: 127.0.0.1
     type: java
     javaInfo:
@@ -36,8 +36,48 @@ probes:
       args.length: 4
       args.0: "default"
       args.1: "kube-znn"
-      args.2: "replicasText"
+      args.2: "replicasTexta"
       args.3: "count(kube_pod_container_info{image=\"cmendes/znn:400k\"})"
+
+  ReplicasHighbProbe:
+    alias: kube-znn.replicasHighb.probe
+    location: 127.0.0.1
+    type: java
+    javaInfo:
+      class: br.unifor.kubow.probes.PrometheusProbe
+      period: 5000
+      args.length: 4
+      args.0: "default"
+      args.1: "kube-znn"
+      args.2: "replicasHighb"
+      args.3: "count(kube_pod_container_info{image=\"cmendes/znn:200k\"})"
+  
+   
+  ReplicasLowbProbe:
+    alias: kube-znn.replicasLowb.probe
+    location: 127.0.0.1
+    type: java
+    javaInfo:
+      class: br.unifor.kubow.probes.PrometheusProbe
+      period: 5000
+      args.length: 4
+      args.0: "default"
+      args.1: "kube-znn"
+      args.2: "replicasLowb"
+      args.3: "count(kube_pod_container_info{image=\"cmendes/znn:100k\"})"
+
+  ReplicasTextbProbe:
+    alias: kube-znn.replicasTextb.probe
+    location: 127.0.0.1
+    type: java
+    javaInfo:
+      class: br.unifor.kubow.probes.PrometheusProbe
+      period: 5000
+      args.length: 4
+      args.0: "default"
+      args.1: "kube-znn"
+      args.2: "replicasTextb"
+      args.3: "count(kube_pod_container_info{image=\"cmendes/znn:20k\"})"      
 
   SloProbe:
     alias: kube-znn.slo.probe

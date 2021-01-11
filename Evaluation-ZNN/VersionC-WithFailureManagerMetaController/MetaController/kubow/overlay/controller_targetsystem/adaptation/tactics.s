@@ -1,8 +1,6 @@
 module kubow.strategies;
 import model "KubeZnnSystem:Acme" { KubeZnnSystem as M, KubernetesFam as K };
 
-define boolean removeInconsistency = M.scalabilityaD.desiredReplicas > 1 || M.scalabilitybD.desiredReplicas > 1 || M.fidelityaD.desiredReplicas > 1 || M.fidelitybD.desiredReplicas > 1;
-
 tactic activateLowScalabilityHighQuality(){
   int futureReplicasScalabilityb = M.scalabilitybD.desiredReplicas + 1;
   int futureReplicasFidelitya = M.fidelityaD.desiredReplicas + 1;
@@ -23,7 +21,7 @@ tactic activateLowScalabilityHighQuality(){
       M.scaleDown(M.fidelitybD, 1);    
     }
   }
-  effect @[10000]{
+  effect @[20000]{
     ((futureReplicasScalabilityb == M.scalabilitybD.desiredReplicas) || (futureReplicasFidelitya == M.fidelityaD.desiredReplicas));
   }
 }
@@ -48,7 +46,7 @@ tactic addLowScalabilityLowQuality() {
       M.scaleDown(M.fidelityaD, 1);    
     }
   }
-  effect @[10000]{
+  effect @[20000]{
     ((futureReplicasScalabilityb == M.scalabilitybD.desiredReplicas) || (futureReplicasFidelityb == M.fidelitybD.desiredReplicas));
   }
 }
@@ -73,7 +71,7 @@ tactic addHighScalabilityHighQuality() {
       M.scaleDown(M.fidelitybD, 1);    
     }
   }
-  effect @[10000]{
+  effect @[20000]{
     (futureReplicasScalabilitya == M.scalabilityaD.desiredReplicas || futureReplicasFidelitya == M.fidelityaD.desiredReplicas);
   }
 }

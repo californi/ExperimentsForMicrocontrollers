@@ -133,6 +133,10 @@ System KubeZnnSystem : KubernetesFam = new KubernetesFam extended with {
 
     Attachment failureManagerS.apiPort to failureManagerServiceConnector.callee;
     Attachment failureManagerD.apiPort to failureManagerServiceConnector.caller;
-  
 
+
+    Component kubeZnnD : DeploymentT = new DeploymentT extended with {
+      Property namespace = "default";
+      Property name = "kube-znn"; 
+    }
 }

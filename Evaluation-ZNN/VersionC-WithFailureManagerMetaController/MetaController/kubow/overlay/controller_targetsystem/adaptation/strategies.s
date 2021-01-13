@@ -6,6 +6,8 @@ define boolean NoFailureRate = M.failureManagerS.cpufailure == 0.0;
 define boolean LowFailureRate = M.failureManagerS.cpufailure > 0.0 && M.failureManagerS.cpufailure <= 0.5;
 define boolean HighFailureRate = M.failureManagerS.cpufailure > 0.5;
 
+// Obter boolean para levar em conta qual o microcontroller atual...  (isso devido ao bug sobre ativar HighFailureRate) -- ou pensar em outra logica de negocio para os limiares de falha
+
 strategy activateNoFailureRate [ NoFailureRate ] {  
   t0: (NoFailureRate) -> addHighScalabilityHighQuality() @[40000 /*ms*/] {
     t0a: (success) -> done;

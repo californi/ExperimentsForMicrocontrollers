@@ -86,3 +86,13 @@ gauge-instances:
       targetIP: "127.0.0.1"
     configValues:
       targetProbeType: default-failuremanager-cpufailure@*      
+
+  KubeZnnInfoGauge:
+    type: KubowGaugeT
+    model: "KubeZnnSystem:Acme"
+    commands:
+      "setDeploymentInfo()": kubeZnnD.setDeploymentInfo($<jsonValue>)
+    setupValues:
+      targetIP: "127.0.0.1"
+    configValues:
+      targetProbeType: deployments.default.kube-znn.probe@*      

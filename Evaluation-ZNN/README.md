@@ -67,14 +67,14 @@ kubectl delete -k .\Evaluation-ZNN\tools\k6\
 #---------------------------------------------------#---------------------------------------------------
 
 ## Generating logs
-kubectl logs pod/scalabilitya-c5f677bc-cltk6 >> kubowCBScalability.log
+kubectl logs pod/scalabilitya-66dcfc647f-bccj2 >> kubowCCScalability.log
 
 ## Monitoring
 while (1) {clear; kubectl get all; sleep 5}
 while (1) {clear; kubectl describe deployment kube-znn; sleep 5}
 
 ### query prometheus in K8s
-kubectl port-forward pod/prometheus-d4499d495-gxw4q 9090:9090
+kubectl port-forward pod/prometheus-d4499d495-4bhxg 9090:9090
 
 ### Grafana
 kubectl port-forward pod/grafana-b659fcdd9-r5sck 3000:3000

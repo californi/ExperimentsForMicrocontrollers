@@ -6,7 +6,7 @@ define boolean NoFailureRate = M.failureManagerS.cpufailure == 0.0;
 define boolean LowFailureRate = M.failureManagerS.cpufailure > 0.0 && M.failureManagerS.cpufailure <= 0.5;
 define boolean HighFailureRate = M.failureManagerS.cpufailure > 0.5;
 
-// Obter boolean para levar em conta qual o microcontroller atual...  (isso devido ao bug sobre ativar HighFailureRate) -- ou pensar em outra logica de negocio para os limiares de falha
+define boolean IsScalabilitya = M.kubeZnnD.desiredReplicas > 9;
 
 strategy activateNoFailureRate [ NoFailureRate ] {  
   t0: (NoFailureRate) -> addHighScalabilityHighQuality() @[40000 /*ms*/] {
@@ -15,7 +15,7 @@ strategy activateNoFailureRate [ NoFailureRate ] {
   t1: (default) -> TNULL;
 }
 
-strategy activateLowFailureRate [ LowFailureRate ] {  
+strategy activateLowFailureRate [ LowFailureRate && IsScalabilitya ] {  
   t0: (LowFailureRate) -> activateLowScalabilityHighQuality() @[40000 /*ms*/] {
     t0a: (success) -> done;
   }      
@@ -23,8 +23,8 @@ strategy activateLowFailureRate [ LowFailureRate ] {
 }
 
 
-strategy activateHighFailureRate [ HighFailureRate ] {    
-  t0: (HighFailureRate) -> addLowScalabilityLowQuality() @[40000 /*ms*/] {
+strategy activateHighFailureRate [ HighFailureRate && IsScalabilitya ] {    
+  t0: (HighFailureRate && IsScalabilitya) -> addLowScalabilityLowQuality() @[40000 /*ms*/] {
     t0a: (success) -> done;
   }   
   t1: (default) -> TNULL;

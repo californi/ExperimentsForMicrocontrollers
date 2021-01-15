@@ -8,60 +8,60 @@ minikube addons enable ingress
 
 #---------------------------------------------------#---------------------------------------------------
 ## creating environment: Configuration A - Always - delete and re-create the Cluster
-kubectl apply -k .\Evaluation-ZNN\tools\monitoring\
-kubectl apply -k .\Evaluation-ZNN\VersionA-Monolithic\TargetSystem\kube-znn\overlay\default\
-kubectl apply -f .\Evaluation-ZNN\tools\nginxc-ingress\
-kubectl apply -k .\Evaluation-ZNN\VersionA-Monolithic\kubow\overlay\kube-znn
-kubectl apply -k .\Evaluation-ZNN\tools\k6\
+kubectl apply -k ./Evaluation-ZNN/tools/monitoring/
+kubectl apply -k ./Evaluation-ZNN/VersionA-Monolithic/TargetSystem/kube-znn/overlay/default/
+kubectl apply -f ./Evaluation-ZNN/tools/nginxc-ingress/
+kubectl apply -k ./Evaluation-ZNN/VersionA-Monolithic/kubow/overlay/kube-znn
+kubectl apply -k ./Evaluation-ZNN/tools/k6/
 
-kubectl delete -k .\Evaluation-ZNN\tools\monitoring\
-kubectl delete -k .\Evaluation-ZNN\VersionA-Monolithic\TargetSystem\kube-znn\overlay\default\
-kubectl delete -f .\Evaluation-ZNN\tools\nginxc-ingress\
-kubectl delete -k .\Evaluation-ZNN\VersionA-Monolithic\kubow\overlay\kube-znn
-kubectl delete -k .\Evaluation-ZNN\tools\k6\
+kubectl delete -k ./Evaluation-ZNN/tools/monitoring/
+kubectl delete -k ./Evaluation-ZNN/VersionA-Monolithic/TargetSystem/kube-znn/overlay/default/
+kubectl delete -f ./Evaluation-ZNN/tools/nginxc-ingress/
+kubectl delete -k ./Evaluation-ZNN/VersionA-Monolithic/kubow/overlay/kube-znn
+kubectl delete -k ./Evaluation-ZNN/tools/k6/
 #---------------------------------------------------#---------------------------------------------------
 ## creating environment: Configuration B - Always - delete and re-create the Cluster
-kubectl apply -k .\Evaluation-ZNN\tools\monitoring\
-kubectl apply -k .\Evaluation-ZNN\VersionB-Microcontrollers\TargetSystem\kube-znn\overlay\default\
-kubectl apply -f .\Evaluation-ZNN\tools\nginxc-ingress\
-kubectl apply -k .\Evaluation-ZNN\VersionB-Microcontrollers\fidelitya_microcontroller\kubow\overlay\kube-znn\
-kubectl apply -k .\Evaluation-ZNN\VersionB-Microcontrollers\scalabilitya_microcontroller\kubow\overlay\kube-znn\
-kubectl apply -k .\Evaluation-ZNN\tools\k6\
+kubectl apply -k ./Evaluation-ZNN/tools/monitoring/
+kubectl apply -k ./Evaluation-ZNN/VersionB-Microcontrollers/TargetSystem/kube-znn/overlay/default/
+kubectl apply -f ./Evaluation-ZNN/tools/nginxc-ingress/
+kubectl apply -k ./Evaluation-ZNN/VersionB-Microcontrollers/fidelitya_microcontroller/kubow/overlay/kube-znn/
+kubectl apply -k ./Evaluation-ZNN/VersionB-Microcontrollers/scalabilitya_microcontroller/kubow/overlay/kube-znn/
+kubectl apply -k ./Evaluation-ZNN/tools/k6/
 
-kubectl delete -k .\Evaluation-ZNN\tools\monitoring\
-kubectl delete -k .\Evaluation-ZNN\VersionB-Microcontrollers\TargetSystem\kube-znn\overlay\default\
-kubectl delete -f .\Evaluation-ZNN\tools\nginxc-ingress\
-kubectl delete -k .\Evaluation-ZNN\VersionB-Microcontrollers\fidelitya_microcontroller\kubow\overlay\kube-znn\
-kubectl delete -k .\Evaluation-ZNN\VersionB-Microcontrollers\scalabilitya_microcontroller\kubow\overlay\kube-znn\
-kubectl delete -k .\Evaluation-ZNN\tools\k6\
+kubectl delete -k ./Evaluation-ZNN/tools/monitoring/
+kubectl delete -k ./Evaluation-ZNN/VersionB-Microcontrollers/TargetSystem/kube-znn/overlay/default/
+kubectl delete -f ./Evaluation-ZNN/tools/nginxc-ingress/
+kubectl delete -k ./Evaluation-ZNN/VersionB-Microcontrollers/fidelitya_microcontroller/kubow/overlay/kube-znn/
+kubectl delete -k ./Evaluation-ZNN/VersionB-Microcontrollers/scalabilitya_microcontroller/kubow/overlay/kube-znn/
+kubectl delete -k ./Evaluation-ZNN/tools/k6/
 
 #---------------------------------------------------#---------------------------------------------------
 ## creating environment: Configuration C - Always - delete and re-create the Cluster
 
-kubectl apply -f .\Evaluation-ZNN\VersionC-WithFailureManagerMetaController\MetaController\priorityObjectsK8s\
-kubectl apply -k .\Evaluation-ZNN\tools\monitoring\
-kubectl apply -k .\Evaluation-ZNN\VersionC-WithFailureManagerMetaController\TargetSystem\kube-znn\overlay\default\
-kubectl apply -f .\Evaluation-ZNN\tools\nginxc-ingress\
-kubectl apply -k .\Evaluation-ZNN\VersionC-WithFailureManagerMetaController\MicroControllers\kubow_based\fidelitya_microcontroller\kubow\overlay\kube-znn\
-kubectl apply -k .\Evaluation-ZNN\VersionC-WithFailureManagerMetaController\MicroControllers\kubow_based\scalabilitya_microcontroller\kubow\overlay\kube-znn\
-kubectl apply -k .\Evaluation-ZNN\VersionC-WithFailureManagerMetaController\MicroControllers\kubow_based\fidelityb_microcontroller\kubow\overlay\kube-znn\
-kubectl apply -k .\Evaluation-ZNN\VersionC-WithFailureManagerMetaController\MicroControllers\kubow_based\scalabilityb_microcontroller\kubow\overlay\kube-znn\
-kubectl apply -f .\Evaluation-ZNN\VersionC-WithFailureManagerMetaController\MicroControllers\tailored_based\k8s\
-kubectl apply -k .\Evaluation-ZNN\VersionC-WithFailureManagerMetaController\MetaController\kubow\overlay\controller_targetsystem\
-kubectl apply -k .\Evaluation-ZNN\tools\k6\
+kubectl apply -f ./Evaluation-ZNN/VersionC-WithFailureManagerMetaController/MetaController/priorityObjectsK8s/
+kubectl apply -k ./Evaluation-ZNN/tools/monitoring/
+kubectl apply -k ./Evaluation-ZNN/VersionC-WithFailureManagerMetaController/TargetSystem/kube-znn/overlay/default/
+kubectl apply -f ./Evaluation-ZNN/tools/nginxc-ingress/
+kubectl apply -k ./Evaluation-ZNN/VersionC-WithFailureManagerMetaController/MicroControllers/kubow_based/fidelitya_microcontroller/kubow/overlay/kube-znn/
+kubectl apply -k ./Evaluation-ZNN/VersionC-WithFailureManagerMetaController/MicroControllers/kubow_based/scalabilitya_microcontroller/kubow/overlay/kube-znn/
+kubectl apply -k ./Evaluation-ZNN/VersionC-WithFailureManagerMetaController/MicroControllers/kubow_based/fidelityb_microcontroller/kubow/overlay/kube-znn/
+kubectl apply -k ./Evaluation-ZNN/VersionC-WithFailureManagerMetaController/MicroControllers/kubow_based/scalabilityb_microcontroller/kubow/overlay/kube-znn/
+kubectl apply -f ./Evaluation-ZNN/VersionC-WithFailureManagerMetaController/MicroControllers/tailored_based/k8s/
+kubectl apply -k ./Evaluation-ZNN/VersionC-WithFailureManagerMetaController/MetaController/kubow/overlay/controller_targetsystem/
+kubectl apply -k ./Evaluation-ZNN/tools/k6/
 
 
-kubectl delete -f .\Evaluation-ZNN\VersionC-WithFailureManagerMetaController\MetaController\priorityObjectsK8s\
-kubectl delete -k .\Evaluation-ZNN\tools\monitoring\
-kubectl delete -k .\Evaluation-ZNN\VersionC-WithFailureManagerMetaController\TargetSystem\kube-znn\overlay\default\
-kubectl delete -f .\Evaluation-ZNN\tools\nginxc-ingress\
-kubectl delete -k .\Evaluation-ZNN\VersionC-WithFailureManagerMetaController\MicroControllers\kubow_based\fidelitya_microcontroller\kubow\overlay\kube-znn\
-kubectl delete -k .\Evaluation-ZNN\VersionC-WithFailureManagerMetaController\MicroControllers\kubow_based\scalabilitya_microcontroller\kubow\overlay\kube-znn\
-kubectl delete -k .\Evaluation-ZNN\VersionC-WithFailureManagerMetaController\MicroControllers\kubow_based\fidelityb_microcontroller\kubow\overlay\kube-znn\
-kubectl delete -k .\Evaluation-ZNN\VersionC-WithFailureManagerMetaController\MicroControllers\kubow_based\scalabilityb_microcontroller\kubow\overlay\kube-znn\
-kubectl delete -f .\Evaluation-ZNN\VersionC-WithFailureManagerMetaController\MicroControllers\tailored_based\k8s\
-kubectl delete -k .\Evaluation-ZNN\VersionC-WithFailureManagerMetaController\MetaController\kubow\overlay\controller_targetsystem\
-kubectl delete -k .\Evaluation-ZNN\tools\k6\
+kubectl delete -f ./Evaluation-ZNN/VersionC-WithFailureManagerMetaController/MetaController/priorityObjectsK8s/
+kubectl delete -k ./Evaluation-ZNN/tools/monitoring/
+kubectl delete -k ./Evaluation-ZNN/VersionC-WithFailureManagerMetaController/TargetSystem/kube-znn/overlay/default/
+kubectl delete -f ./Evaluation-ZNN/tools/nginxc-ingress/
+kubectl delete -k ./Evaluation-ZNN/VersionC-WithFailureManagerMetaController/MicroControllers/kubow_based/fidelitya_microcontroller/kubow/overlay/kube-znn/
+kubectl delete -k ./Evaluation-ZNN/VersionC-WithFailureManagerMetaController/MicroControllers/kubow_based/scalabilitya_microcontroller/kubow/overlay/kube-znn/
+kubectl delete -k ./Evaluation-ZNN/VersionC-WithFailureManagerMetaController/MicroControllers/kubow_based/fidelityb_microcontroller/kubow/overlay/kube-znn/
+kubectl delete -k ./Evaluation-ZNN/VersionC-WithFailureManagerMetaController/MicroControllers/kubow_based/scalabilityb_microcontroller/kubow/overlay/kube-znn/
+kubectl delete -f ./Evaluation-ZNN/VersionC-WithFailureManagerMetaController/MicroControllers/tailored_based/k8s/
+kubectl delete -k ./Evaluation-ZNN/VersionC-WithFailureManagerMetaController/MetaController/kubow/overlay/controller_targetsystem/
+kubectl delete -k ./Evaluation-ZNN/tools/k6/
 
 
 #---------------------------------------------------#---------------------------------------------------

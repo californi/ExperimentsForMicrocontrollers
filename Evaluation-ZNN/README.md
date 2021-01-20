@@ -67,7 +67,7 @@ kubectl delete -k ./Evaluation-ZNN/tools/k6/
 #---------------------------------------------------#---------------------------------------------------
 
 ## Generating logs
-kubectl logs pod/scalabilityb-d85747956-2nxmj >> kubowCCScalability.log
+kubectl logs pod/k6-z5fcb >> job2.log
 
 ## Monitoring
 while (1) {clear; kubectl get all; sleep 5}

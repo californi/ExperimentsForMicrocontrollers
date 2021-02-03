@@ -17,9 +17,9 @@ spec:
             - /load-testing.js
           env:
             - name: K6_DURATION
-              value: "1m"
+              value: "2m"
             - name: K6_VUS
-              value: "1"
+              value: "3"
           volumeMounts:
             - name: script
               mountPath: /load-testing.js

@@ -10,9 +10,10 @@ initialTime = dtEvent.strftime("%Y%m%d_%H%M%S")
 
 def writeLogsFromPod(podname, content):
     file = podname + "_tracing_" + initialTime + ".log"
-    f = open(file, "a")
+    f = open(file, "a", encoding="utf-8")
     f.write(content)
     f.close()
+    return file
 
 def main():
     period = 0
@@ -149,6 +150,7 @@ def main():
         logging.warning(dataCollection)
 
     finally:
+        logging.warning("Generating logs for Kubow and K6.")
         ret = core.list_pod_for_all_namespaces(watch=False)
         for i in ret.items:
             podKubow = re.search(
@@ -158,7 +160,9 @@ def main():
 
             if podKubow or podK6:
                 logs = core.read_namespaced_pod_log(i.metadata.name,i.metadata.namespace)
-                writeLogsFromPod(i.metadata.name,logs)
+                file = writeLogsFromPod(i.metadata.name,str(logs))
+                logging.warning("File " + file + "has been generated.")
+
 
         logging.warning("Finished pod stream.")
 

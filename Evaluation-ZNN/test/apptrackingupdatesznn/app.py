@@ -153,12 +153,23 @@ def main():
         logging.warning("Generating logs for Kubow and K6.")
         ret = core.list_pod_for_all_namespaces(watch=False)
         for i in ret.items:
+
+            podMetacontroller = re.search(
+                'metacontroller', str(i.metadata.name), re.IGNORECASE)
             podKubow = re.search(
                 'kubow', str(i.metadata.name), re.IGNORECASE)
+            podFidelitya = re.search(
+                'fidelitya', str(i.metadata.name), re.IGNORECASE)         
+            podFidelityb = re.search(
+                'fidelityb', str(i.metadata.name), re.IGNORECASE)     
+            podScalabilitya = re.search(
+                'scalabilitya', str(i.metadata.name), re.IGNORECASE)     
+            podScalabilityb = re.search(
+                'scalabilityb', str(i.metadata.name), re.IGNORECASE)                                                            
             podK6 = re.search(
                 'k6', str(i.metadata.name), re.IGNORECASE)
 
-            if podKubow or podK6:
+            if podKubow or podK6 or podFidelitya or podFidelityb or podScalabilitya or podScalabilityb or podMetacontroller:
                 logs = core.read_namespaced_pod_log(i.metadata.name,i.metadata.namespace)
                 file = writeLogsFromPod(i.metadata.name,str(logs))
                 logging.warning("File " + file + "has been generated.")

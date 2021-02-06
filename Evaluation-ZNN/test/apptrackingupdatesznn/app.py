@@ -77,8 +77,6 @@ def main():
                      "type": event['object'].type,
                      "message": event['object'].message,
                      "dateevent": str(event['object'].metadata.creation_timestamp)}
-
-
             
             resultNamePod = re.search(
                 'kube-znn', str(event["name"]), re.IGNORECASE)
@@ -86,10 +84,21 @@ def main():
                 'scale', str(event["message"]), re.IGNORECASE)
 
 
+            podFidelitya = re.search(
+                'fidelitya', str(event["name"]), re.IGNORECASE)         
+            podFidelityb = re.search(
+                'fidelityb', str(event["name"]), re.IGNORECASE)     
+            podScalabilitya = re.search(
+                'scalabilitya', str(event["name"]), re.IGNORECASE)     
+            podScalabilityb = re.search(
+                'scalabilityb', str(event["name"]), re.IGNORECASE)   
+
+            logging.warning("\n\n-----------------------------------------")
             logging.warning("General Log - ")
             logging.warning(event)
             print("General Log - ")
             print(event)
+            logging.warning("\n\n-----------------------------------------")
             
 
             if resultNamePod and scaleMessage:
@@ -107,10 +116,21 @@ def main():
                 event["image"] = current_image
                 event["replicas"] = current_replicas
 
+                logging.warning("\n\n-----------------------------------------")
                 logging.warning("\n\nCaptured event for znn: ")
                 logging.warning(event)
                 print("\n\nCaptured event for znn: ")
                 print(event)
+                logging.warning("\n\n-----------------------------------------")
+            
+            if scaleMessage and podFidelitya or podFidelityb or podScalabilitya or podScalabilityb:
+                logging.warning("\n\n-----------------------------------------")
+                logging.warning("\n\nCaptured event for Metacontroller and microcontrollers: ")
+                logging.warning("\n\n MetaController has adapted the microcontrollers.")
+                print(event)
+                logging.warning(event)
+                logging.warning("\n\n-----------------------------------------")
+
 
             if datetime.datetime.now() > dtLimit:
                 w.stop() 
@@ -125,17 +145,21 @@ def main():
 
 
         print("\n\nData collection")        
+        logging.warning("\n\n-----------------------------------------")
         logging.warning("\n\nData collection")
         logging.warning("Datetime:")
         logging.warning(finalTime)
         print(dataCollection)
         logging.warning(dataCollection)
+        logging.warning("\n\n-----------------------------------------")
 
     except:
         e = sys.exc_info()[0]
+        logging.warning("\n\n-----------------------------------------")
         logging.warning("An exception occurred")
         logging.warning( "Error: %s" % e )
         print("An exception occurred")
+        logging.warning("\n\n-----------------------------------------")
         
         logging.warning("\n\nData collection")
         dtEvent = datetime.datetime.now()
@@ -148,8 +172,10 @@ def main():
         dataCollection["finalimageChanges"] = imageChanges
         dataCollection["finalevent"] = finalTime
         logging.warning(dataCollection)
+        logging.warning("\n\n-----------------------------------------")
 
     finally:
+        logging.warning("\n\n-----------------------------------------")
         logging.warning("Generating logs for Kubow and K6.")
         ret = core.list_pod_for_all_namespaces(watch=False)
         for i in ret.items:
@@ -176,6 +202,7 @@ def main():
 
 
         logging.warning("Finished pod stream.")
+        logging.warning("\n\n-----------------------------------------")
 
 
 if __name__ == '__main__':

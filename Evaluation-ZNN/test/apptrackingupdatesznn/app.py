@@ -115,6 +115,8 @@ def main():
                 current_replicas = current_deployment.spec.replicas
                 event["image"] = current_image
                 event["replicas"] = current_replicas
+                event["imageChanges"] = imageChanges
+                event["replicasChanges"] = replicasChanges
 
                 logging.warning("\n\n-----------------------------------------")
                 logging.warning("\n\nCaptured event for znn: ")

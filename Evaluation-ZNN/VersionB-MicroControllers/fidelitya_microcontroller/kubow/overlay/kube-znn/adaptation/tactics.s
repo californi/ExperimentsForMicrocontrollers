@@ -1,9 +1,9 @@
 module kubow.strategies;
 import model "KubeZnnSystem:Acme" { KubeZnnSystem as M, KubernetesFam as K };
 
-define boolean textMode = M.kubeZnnD.replicasText >= M.kubeZnnD.desiredReplicas;
-define boolean lowMode = M.kubeZnnD.replicasLow >= M.kubeZnnD.desiredReplicas;
-define boolean highMode = M.kubeZnnD.replicasHigh >= M.kubeZnnD.desiredReplicas;
+define boolean textMode = M.kubeZnnD.replicasText > 0;
+define boolean lowMode = M.kubeZnnD.replicasLow > 0;
+define boolean highMode = M.kubeZnnD.replicasHigh > 0;
 
 define string highModeImage = "cmendes/znn:800k";
 define string lowModeImage = "cmendes/znn:600k";

@@ -2,7 +2,7 @@ module kubow.strategies;
 import model "KubeZnnSystem:Acme" { KubeZnnSystem as M, KubernetesFam as K };
 import lib "tactics.s";
 
-define boolean highMode = M.kubeZnnD.replicasHigh >= M.kubeZnnD.desiredReplicas;
+define boolean highMode = M.kubeZnnD.replicasHigh > 0;
 
 define boolean sloRed = M.kubeZnnS.slo <= 0.95;
 define boolean sloGreen = M.kubeZnnS.slo >= 0.99;

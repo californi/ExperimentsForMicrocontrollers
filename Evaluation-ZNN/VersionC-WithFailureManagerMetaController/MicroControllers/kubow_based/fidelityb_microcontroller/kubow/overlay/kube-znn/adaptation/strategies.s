@@ -2,7 +2,7 @@ module kubow.strategies;
 import model "KubeZnnSystem:Acme" { KubeZnnSystem as M, KubernetesFam as K };
 import lib "tactics.s";
 
-define boolean highMode = M.kubeZnnD.replicasHigha >= M.kubeZnnD.desiredReplicas || M.kubeZnnD.replicasHighb >= M.kubeZnnD.desiredReplicas;
+define boolean highMode = M.kubeZnnD.replicasHigha > 0 || M.kubeZnnD.replicasHighb > 0;
 
 
 define boolean sloRed = M.kubeZnnS.slo <= 0.95;
@@ -26,8 +26,8 @@ strategy ImproveSlo [ sloRed ] {
 /*
  * ----
  */
-strategy ImproveFidelity [ sloGreen ] {
-  t0: (sloGreen) -> raiseFidelity() @[20000 /*ms*/] {
+strategy ImproveFidelity [ sloGreen && !highMode ] {
+  t0: (sloGreen && !highMode) -> raiseFidelity() @[20000 /*ms*/] {
     t0a: (success) -> done;
   }
   t1: (default) -> TNULL;

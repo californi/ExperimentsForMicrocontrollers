@@ -8,6 +8,8 @@ define boolean sloGreen = M.kubeZnnS.slo >= 0.99;
 define boolean canAddReplica = M.kubeZnnD.maxReplicas > M.kubeZnnD.desiredReplicas;
 define boolean canRemoveReplica = M.kubeZnnD.minReplicas < M.kubeZnnD.desiredReplicas;
 
+define boolean mismatchingReplicas = M.kubeZnnD.desiredReplicas > M.kubeZnnD.maxReplicas;
+
 /*
  * ----
  */
@@ -21,8 +23,16 @@ strategy ImproveSlo [ canAddReplica && sloRed ] {
 /*
  * ----
  */
-strategy ReduceCost [ canRemoveReplica ] {
-  t0: (canRemoveReplica) -> removeReplica() @[20000 /*ms*/] {
+strategy ReduceCost [ sloGreen ] {
+  t0: (sloGreen && canRemoveReplica) -> removeReplica() @[20000 /*ms*/] {
+    t0a: (success) -> done;
+  }
+  t1: (default) -> TNULL;
+}
+
+
+strategy AdjustDefaultReplicas [ mismatchingReplicas ] {
+  t0: (mismatchingReplicas) -> adjustReplicas() @[20000 /*ms*/] {
     t0a: (success) -> done;
   }
   t1: (default) -> TNULL;

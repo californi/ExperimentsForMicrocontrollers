@@ -17,38 +17,32 @@ tactic addReplica() {
 }
 
 tactic removeReplica() {
-  int mismatchingReplicas = M.kubeZnnD.desiredReplicas - M.kubeZnnD.maxReplicas;
   int futureReplicas = M.kubeZnnD.desiredReplicas - 1;
-  int futureReplicasOver = M.kubeZnnD.desiredReplicas - mismatchingReplicas;
   condition {
     isStable && M.kubeZnnD.minReplicas < M.kubeZnnD.desiredReplicas;
   }
   action {
-    if(mismatchingReplicas > 0){
-      M.scaleDown(M.kubeZnnD, mismatchingReplicas);
+    if(M.kubeZnnD.desiredReplicas > M.kubeZnnD.maxReplicas){
+      M.scaleDown(M.kubeZnnD, 9);
     }
     if(mismatchingReplicas <= 0){
       M.scaleDown(M.kubeZnnD, 1);
     }
   }
   effect @[10000] {
-    futureReplicas == M.kubeZnnD.desiredReplicas || futureReplicasOver == M.kubeZnnD.desiredReplicas;
+    futureReplicas == M.kubeZnnD.desiredReplicas || M.kubeZnnD.desiredReplicas <= M.kubeZnnD.maxReplicas;
   }
 }
 
-tactic AdjustReplicas(){
-  int mismatchingReplicas = M.kubeZnnD.desiredReplicas - M.kubeZnnD.maxReplicas;
-  int futureReplicas = M.kubeZnnD.desiredReplicas - mismatchingReplicas;
+tactic adjustReplicas(){
   condition {
     M.kubeZnnD.maxReplicas < M.kubeZnnD.desiredReplicas;
   }
   action {
-    if(mismatchingReplicas > 0){
-      M.scaleDown(M.kubeZnnD, mismatchingReplicas);
-    }
+    M.scaleDown(M.kubeZnnD, 9);
   }
   effect @[15000] {
-    futureReplicas == M.kubeZnnD.desiredReplicas;
+    M.kubeZnnD.maxReplicas > M.kubeZnnD.desiredReplicas;
   }
 
 }

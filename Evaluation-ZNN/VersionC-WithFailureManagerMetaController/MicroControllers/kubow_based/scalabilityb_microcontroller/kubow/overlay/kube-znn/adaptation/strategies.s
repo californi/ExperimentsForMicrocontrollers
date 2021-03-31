@@ -23,17 +23,16 @@ strategy ImproveSlo [ canAddReplica && sloRed ] {
 /*
  * ----
  */
-strategy ReduceCost [ canRemoveReplica ] {
-  t0: (canRemoveReplica) -> removeReplica() @[20000 /*ms*/] {
+strategy ReduceCost [ sloGreen ] {
+  t0: (sloGreen && canRemoveReplica) -> removeReplica() @[20000 /*ms*/] {
     t0a: (success) -> done;
   }
   t1: (default) -> TNULL;
 }
 
 strategy AdjustDefaultReplicas [ mismatchingReplicas ] {
-  t0: (mismatchingReplicas) -> AdjustReplicas() @[30000 /*ms*/] {
+  t0: (mismatchingReplicas) -> adjustReplicas() @[20000 /*ms*/] {
     t0a: (success) -> done;
   }
   t1: (default) -> TNULL;
-
 }

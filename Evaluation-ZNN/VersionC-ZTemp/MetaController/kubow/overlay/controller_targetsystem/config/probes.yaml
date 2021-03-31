@@ -1,0 +1,81 @@
+probes:
+
+  DeploymentFidelityaPropertiesProbe:
+    alias: deployments.default.fidelitya.probe
+    location: 127.0.0.1
+    type: java
+    javaInfo:
+      class: br.unifor.kubow.probes.DeploymentInfoProbe
+      period: 5000
+      args.length: 2
+      args.0: "default"
+      args.1: "fidelitya"
+
+  DeploymentScalabilityaPropertiesProbe:
+    alias: deployments.default.scalabilitya.probe
+    location: 127.0.0.1
+    type: java
+    javaInfo:
+      class: br.unifor.kubow.probes.DeploymentInfoProbe
+      period: 5000
+      args.length: 2
+      args.0: "default"
+      args.1: "scalabilitya" 
+
+  DeploymentFidelitybPropertiesProbe:
+    alias: deployments.default.fidelityb.probe
+    location: 127.0.0.1
+    type: java
+    javaInfo:
+      class: br.unifor.kubow.probes.DeploymentInfoProbe
+      period: 5000
+      args.length: 2
+      args.0: "default"
+      args.1: "fidelityb"
+
+  DeploymentScalabilitybPropertiesProbe:
+    alias: deployments.default.scalabilityb.probe
+    location: 127.0.0.1
+    type: java
+    javaInfo:
+      class: br.unifor.kubow.probes.DeploymentInfoProbe
+      period: 5000
+      args.length: 2
+      args.0: "default"
+      args.1: "scalabilityb"       
+   
+  DeploymentFailureManagerPropertiesProbe:
+    alias: deployments.default.failuremanager.probe
+    location: 127.0.0.1
+    type: java
+    javaInfo:
+      class: br.unifor.kubow.probes.DeploymentInfoProbe
+      period: 5000
+      args.length: 2
+      args.0: "default"
+      args.1: "failuremanager"            
+
+  CpufailureProbe:
+    alias: failuremanager.cpufailure.probe
+    location: 127.0.0.1
+    type: java
+    javaInfo:
+      class: br.unifor.kubow.probes.PrometheusProbe
+      period: 5000
+      args.length: 4
+      args.0: "default"
+      args.1: "failuremanager"
+      args.2: "cpufailure"
+      args.3: "sum (rate(http_requests_total{handler=\"/insufficientcpu\"}[30s]))"
+
+  DeploymentPropertiesProbe:
+    alias: deployments.default.kube-znn.probe
+    location: 127.0.0.1
+    type: java
+    javaInfo:
+      class: br.unifor.kubow.probes.DeploymentInfoProbe
+      period: 5000
+      args.length: 2
+      args.0: "default"
+      args.1: "kube-znn"
+

@@ -35,7 +35,10 @@ kubectl delete -k ./Evaluation-ZNN/VersionB-Microcontrollers/fidelitya_microcont
 kubectl delete -k ./Evaluation-ZNN/VersionB-Microcontrollers/scalabilitya_microcontroller/kubow/overlay/kube-znn/
 kubectl delete -k ./Evaluation-ZNN/tools/k6/
 
+
 #---------------------------------------------------#---------------------------------------------------
+
+
 ## creating environment: Configuration C - Always - delete and re-create the Cluster
 
 kubectl apply -f ./Evaluation-ZNN/VersionC-WithFailureManagerMetaController/MetaController/priorityObjectsK8s/
@@ -67,7 +70,9 @@ kubectl delete -k ./Evaluation-ZNN/tools/k6/
 #---------------------------------------------------#---------------------------------------------------
 
 ## Generating logs
-kubectl logs pod/kubow-7bf4fdd856-hzxvz >> kubow.log
+kubectl logs pod/scalabilitya-7dc65554c8-rtfsb >> scalabilitya.log
+pod=$(kubectl get pod | grep scalability | cut -b 1-29)
+pod=$(kubectl get pod | grep fidelity | cut -b 1-29)
 
 ## Monitoring
 while (1) {clear; kubectl get all; sleep 5}

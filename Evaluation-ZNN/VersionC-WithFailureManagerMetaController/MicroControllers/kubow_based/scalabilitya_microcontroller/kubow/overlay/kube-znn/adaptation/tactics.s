@@ -28,3 +28,18 @@ tactic removeReplica() {
     futureReplicas == M.kubeZnnD.desiredReplicas;
   }
 }
+
+tactic adjustReplicas(){
+  int futureReplicas = 1;
+  int scalingDown = M.kubeZnnD.desiredReplicas - 1;
+  condition {
+    M.kubeZnnD.maxReplicas < M.kubeZnnD.desiredReplicas;
+  }
+  action {
+    M.scaleDown(M.kubeZnnD, scalingDown);
+  }
+  effect @[15000] {
+    futureReplicas == M.kubeZnnD.desiredReplicas;
+  }
+
+}

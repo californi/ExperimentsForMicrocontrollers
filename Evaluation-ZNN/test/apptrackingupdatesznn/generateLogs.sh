@@ -20,6 +20,19 @@ while [ $SECONDS -lt $end ]; do
 
     pod=$(kubectl get pod | grep Running | grep fidelityb | cut -b 1-26)
     echo "Generating data for pod: "$pod
-    kubectl logs pod/${pod} > ${pod}.log    
+    kubectl logs pod/${pod} > ${pod}.log   
+
+    pod=$(kubectl get pod | grep Running | grep metacontroller | cut -b 1-37)
+    echo "Generating data for pod: "$pod
+    kubectl logs pod/${pod} > ${pod}.log   
+	
+    pod=$(kubectl get pod | grep Running | grep failuremonitor | cut -b 1-31)
+    echo "Generating data for pod: "$pod
+    kubectl logs pod/${pod} > ${pod}.log   	
+	
+    pod=$(kubectl get pod | grep Running | grep failuremanager | cut -b 1-31)
+    echo "Generating data for pod: "$pod
+    kubectl logs pod/${pod} > ${pod}.log   		
+	
     :
 done

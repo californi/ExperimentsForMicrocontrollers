@@ -1,0 +1,62 @@
+-------------------------------------------------------------------------------
+NGINX Ingress controller
+  Release:       v0.40.2
+  Build:         fc4ccc5eb0e41be2436a978b01477fc354f31643
+  Repository:    https://github.com/kubernetes/ingress-nginx
+  nginx version: nginx/1.19.3
+
+-------------------------------------------------------------------------------
+
+W0331 16:40:35.113506       8 client_config.go:608] Neither --kubeconfig nor --master was specified.  Using the inClusterConfig.  This might not work.
+I0331 16:40:35.113804       8 main.go:236] "Creating API client" host="https://10.96.0.1:443"
+I0331 16:40:35.119585       8 main.go:280] "Running in Kubernetes cluster" major="1" minor="16" git="v1.16.10" state="clean" commit="f3add640dbcd4f3c33a7749f38baaac0b3fe810d" platform="linux/amd64"
+I0331 16:40:35.459247       8 main.go:105] "SSL fake certificate created" file="/etc/ingress-controller/ssl/default-fake-certificate.pem"
+I0331 16:40:35.475445       8 ssl.go:528] "loading tls certificate" path="/usr/local/certificates/cert" key="/usr/local/certificates/key"
+I0331 16:40:35.502243       8 nginx.go:249] "Starting NGINX Ingress controller"
+I0331 16:40:35.506597       8 event.go:282] Event(v1.ObjectReference{Kind:"ConfigMap", Namespace:"kube-system", Name:"udp-services", UID:"4aa6004c-b9b5-4d8d-99ba-68a4df1c34ca", APIVersion:"v1", ResourceVersion:"376", FieldPath:""}): type: 'Normal' reason: 'CREATE' ConfigMap kube-system/udp-services
+I0331 16:40:35.507957       8 event.go:282] Event(v1.ObjectReference{Kind:"ConfigMap", Namespace:"kube-system", Name:"nginx-load-balancer-conf", UID:"70582da5-d6d5-4ffa-b04d-f0ce47d634ab", APIVersion:"v1", ResourceVersion:"374", FieldPath:""}): type: 'Normal' reason: 'CREATE' ConfigMap kube-system/nginx-load-balancer-conf
+I0331 16:40:35.513737       8 event.go:282] Event(v1.ObjectReference{Kind:"ConfigMap", Namespace:"kube-system", Name:"tcp-services", UID:"9b3190a5-f4c3-440a-9e30-3687466a0e50", APIVersion:"v1", ResourceVersion:"375", FieldPath:""}): type: 'Normal' reason: 'CREATE' ConfigMap kube-system/tcp-services
+I0331 16:40:36.703314       8 nginx.go:291] "Starting NGINX process"
+I0331 16:40:36.703564       8 leaderelection.go:243] attempting to acquire leader lease  kube-system/ingress-controller-leader-nginx...
+I0331 16:40:36.703877       8 nginx.go:311] "Starting validation webhook" address=":8443" certPath="/usr/local/certificates/cert" keyPath="/usr/local/certificates/key"
+I0331 16:40:36.704072       8 controller.go:145] "Configuration changes detected, backend reload required"
+I0331 16:40:36.710415       8 leaderelection.go:253] successfully acquired lease kube-system/ingress-controller-leader-nginx
+I0331 16:40:36.710601       8 status.go:84] "New leader elected" identity="ingress-nginx-controller-7f9bbb757f-kk68n"
+I0331 16:40:36.761704       8 controller.go:162] "Backend successfully reloaded"
+I0331 16:40:36.761834       8 controller.go:173] "Initial sync, sleeping for 1 second"
+I0331 16:40:36.762310       8 event.go:282] Event(v1.ObjectReference{Kind:"Pod", Namespace:"kube-system", Name:"ingress-nginx-controller-7f9bbb757f-kk68n", UID:"134ae57d-7375-44d2-af8e-c2f1fe40c8f6", APIVersion:"v1", ResourceVersion:"401", FieldPath:""}): type: 'Normal' reason: 'RELOAD' NGINX reload triggered due to a change in configuration
+W0331 16:41:54.753509       8 controller.go:937] Service "default/kube-znn" does not have any active Endpoint.
+I0331 16:41:54.839160       8 main.go:117] "successfully validated configuration, accepting" ingress="ingress-kube-znn" namespace="default"
+I0331 16:41:54.848370       8 event.go:282] Event(v1.ObjectReference{Kind:"Ingress", Namespace:"default", Name:"ingress-kube-znn", UID:"0aa6d56a-e81f-4413-936c-348dbb05626b", APIVersion:"networking.k8s.io/v1beta1", ResourceVersion:"734", FieldPath:""}): type: 'Normal' reason: 'CREATE' Ingress default/ingress-kube-znn
+W0331 16:41:58.001486       8 controller.go:937] Service "default/kube-znn" does not have any active Endpoint.
+I0331 16:41:58.001594       8 controller.go:145] "Configuration changes detected, backend reload required"
+I0331 16:41:58.069203       8 controller.go:162] "Backend successfully reloaded"
+I0331 16:41:58.069495       8 event.go:282] Event(v1.ObjectReference{Kind:"Pod", Namespace:"kube-system", Name:"ingress-nginx-controller-7f9bbb757f-kk68n", UID:"134ae57d-7375-44d2-af8e-c2f1fe40c8f6", APIVersion:"v1", ResourceVersion:"401", FieldPath:""}): type: 'Normal' reason: 'RELOAD' NGINX reload triggered due to a change in configuration
+W0331 16:42:01.334726       8 controller.go:937] Service "default/kube-znn" does not have any active Endpoint.
+W0331 16:42:33.597092       8 controller.go:937] Service "default/kube-znn" does not have any active Endpoint.
+I0331 16:42:36.725977       8 status.go:277] "updating Ingress status" namespace="default" ingress="ingress-kube-znn" currentValue=[] newValue=[{IP:192.168.176.142 Hostname:}]
+I0331 16:42:36.731492       8 event.go:282] Event(v1.ObjectReference{Kind:"Ingress", Namespace:"default", Name:"ingress-kube-znn", UID:"0aa6d56a-e81f-4413-936c-348dbb05626b", APIVersion:"networking.k8s.io/v1beta1", ResourceVersion:"786", FieldPath:""}): type: 'Normal' reason: 'UPDATE' Ingress default/ingress-kube-znn
+W0331 16:42:36.930671       8 controller.go:937] Service "default/kube-znn" does not have any active Endpoint.
+W0331 16:42:47.898647       8 controller.go:937] Service "default/kube-znn" does not have any active Endpoint.
+W0331 16:44:49.796656       8 controller.go:937] Service "default/failuremanager" does not have any active Endpoint.
+I0331 16:44:49.870516       8 main.go:117] "successfully validated configuration, accepting" ingress="failuremanager-ingress" namespace="default"
+I0331 16:44:49.874605       8 event.go:282] Event(v1.ObjectReference{Kind:"Ingress", Namespace:"default", Name:"failuremanager-ingress", UID:"daf5e644-9fd0-4061-bc75-f538e52f9150", APIVersion:"networking.k8s.io/v1beta1", ResourceVersion:"1090", FieldPath:""}): type: 'Normal' reason: 'CREATE' Ingress default/failuremanager-ingress
+W0331 16:44:50.616534       8 controller.go:937] Service "default/failuremanager" does not have any active Endpoint.
+I0331 16:44:50.616699       8 controller.go:145] "Configuration changes detected, backend reload required"
+I0331 16:44:50.684007       8 controller.go:162] "Backend successfully reloaded"
+I0331 16:44:50.684308       8 event.go:282] Event(v1.ObjectReference{Kind:"Pod", Namespace:"kube-system", Name:"ingress-nginx-controller-7f9bbb757f-kk68n", UID:"134ae57d-7375-44d2-af8e-c2f1fe40c8f6", APIVersion:"v1", ResourceVersion:"401", FieldPath:""}): type: 'Normal' reason: 'RELOAD' NGINX reload triggered due to a change in configuration
+W0331 16:44:53.950039       8 controller.go:937] Service "default/failuremanager" does not have any active Endpoint.
+W0331 16:45:27.657535       8 controller.go:937] Service "default/failuremanager" does not have any active Endpoint.
+W0331 16:45:30.991323       8 controller.go:937] Service "default/failuremanager" does not have any active Endpoint.
+I0331 16:45:36.741318       8 status.go:277] "updating Ingress status" namespace="default" ingress="failuremanager-ingress" currentValue=[] newValue=[{IP:192.168.176.142 Hostname:}]
+W0331 16:45:36.765556       8 controller.go:937] Service "default/failuremanager" does not have any active Endpoint.
+I0331 16:45:36.766132       8 event.go:282] Event(v1.ObjectReference{Kind:"Ingress", Namespace:"default", Name:"failuremanager-ingress", UID:"daf5e644-9fd0-4061-bc75-f538e52f9150", APIVersion:"networking.k8s.io/v1beta1", ResourceVersion:"1158", FieldPath:""}): type: 'Normal' reason: 'UPDATE' Ingress default/failuremanager-ingress
+W0331 16:47:46.667833       8 controller.go:937] Service "default/kube-znn" does not have any active Endpoint.
+W0331 16:47:50.001118       8 controller.go:937] Service "default/kube-znn" does not have any active Endpoint.
+W0331 16:47:57.118980       8 controller.go:937] Service "default/kube-znn" does not have any active Endpoint.
+W0331 16:48:06.850818       8 controller.go:937] Service "default/kube-znn" does not have any active Endpoint.
+W0331 16:49:29.519126       8 controller.go:937] Service "default/kube-znn" does not have any active Endpoint.
+W0331 16:49:32.852589       8 controller.go:937] Service "default/kube-znn" does not have any active Endpoint.
+W0331 16:49:36.743345       8 controller.go:937] Service "default/kube-znn" does not have any active Endpoint.
+W0331 16:49:42.372708       8 controller.go:937] Service "default/kube-znn" does not have any active Endpoint.
+W0331 16:49:45.706155       8 controller.go:937] Service "default/kube-znn" does not have any active Endpoint.

@@ -5,9 +5,9 @@ define boolean textMode = M.kubeZnnD.replicasText > 0;
 define boolean lowMode = M.kubeZnnD.replicasLow > 0;
 define boolean highMode = M.kubeZnnD.replicasHigh > 0;
 
-define string highModeImage = "cmendes/znn:600k";
-define string lowModeImage = "cmendes/znn:200k";
-define string textModeImage = "cmendes/znn:text";
+define string highModeImage = "cmendes/znn:800k";
+define string lowModeImage = "cmendes/znn:600k";
+define string textModeImage = "cmendes/znn:400k";
 
 define boolean isStable = M.kubeZnnD.stability == 0;
 

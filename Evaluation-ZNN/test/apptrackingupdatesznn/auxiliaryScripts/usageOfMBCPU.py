@@ -3,9 +3,20 @@ import requests
 import logging
 import sys
 
-PROMETHEUS = 'http://prometheus:9090/'
+# Inside the cluster
+# PROMETHEUS = 'http://prometheus:9090/'  
+# Outside the cluster - need to be allocated a port in advance
+# kubectl port-forward prometheus-xxxxxxxxxx-yyyyyyyyy 9090:9090
+PROMETHEUS = 'http://localhost:9090/'
+
+dtEvent = datetime.datetime.now()
+initialTime = dtEvent.strftime("%Y%m%d_%H%M%S")
+file = "cpuAndMemory_" + initialTime + ".log"
+logging.basicConfig(filename=file, filemode='w',
+                    format='%(name)s - %(levelname)s - %(message)s')
 
 def executeAndGenerate(query):
+    print("Query to be executed: " + query)
     response = requests.get(PROMETHEUS + '/api/v1/query', params={
                             'query': query })
 
@@ -27,7 +38,7 @@ def prepareQueryMb (pod, minutes):
 
 def main():
     try:
-        period = input("Enter a period in minutes: ")
+        period = input("Inform the complete period.\n")
         prepareQueryCpu("failuremanager", period)
         prepareQueryCpu("failuremonitor", period)
         prepareQueryCpu("fidelity", period)
@@ -52,6 +63,9 @@ def main():
         prepareQueryMb("prometheus", period)
         prepareQueryMb("scalability", period)
 
+
+        input("Generation has finished for %s minutes." % period)
+
     except:
         e = sys.exc_info()[0]
         logging.warning("\n\n-----------------------------------------")
@@ -59,6 +73,8 @@ def main():
         logging.warning( "Error: %s" % e )
         print("An exception occurred")
         logging.warning("\n\n-----------------------------------------")
+
+        input("An error has happened.")
          
     finally:
         logging.warning("\n\n-----------------------------------------")

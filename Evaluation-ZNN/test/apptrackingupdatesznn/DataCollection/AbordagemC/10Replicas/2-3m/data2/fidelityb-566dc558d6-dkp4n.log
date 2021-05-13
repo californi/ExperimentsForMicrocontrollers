@@ -1,0 +1,724 @@
+2021-05-13 01:50:16 INFO  KubowApplication:67 - Using target [system] located in path [targets]
+2021-05-13 01:50:16 INFO  KubowApplication:74 - Initializing rainbow master
+2021-05-13 01:50:16 INFO  Rainbow:442 - Unable to find host-specific property file! Will use general file insted. Tried: [fidelityb-566dc558d6-dkp4n, 172.17.0.11, localhost, 127.0.0.1]
+2021-05-13 01:50:18 INFO  ModelsManager:49 - Successfully loaded and registered KubeZnnSystem:Acme
+2021-05-13 01:50:18 INFO  GuavaMasterReportingPort:35 - MODEL: Successfully loaded and registered KubeZnnSystem:Acme
+2021-05-13 01:50:18 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:18 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Gauge Manager started.
+2021-05-13 01:50:18 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:18 INFO  Rainbow:694 - Delegate: master[MODEL]: Successfully loaded and registered KubeZnnSystem:Acme
+2021-05-13 01:50:18 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Gauge Manager started.
+2021-05-13 01:50:18 INFO  GuavaMasterReportingPort:35 - EFFECTOR_MANAGER: Kubow EffectorManager started.
+2021-05-13 01:50:18 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:18 INFO  GuavaMasterReportingPort:35 - MASTER: Starting org.sa.rainbow.evaluator.acme.ArchEvaluator
+2021-05-13 01:50:18 INFO  Rainbow:694 - Delegate: master[EFFECTOR_MANAGER]: Kubow EffectorManager started.
+2021-05-13 01:50:18 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:18 INFO  Rainbow:694 - Delegate: master[MASTER]: Starting org.sa.rainbow.evaluator.acme.ArchEvaluator
+2021-05-13 01:50:18 INFO  GuavaMasterReportingPort:35 - ANALYSIS: Architecture Evaluator started.
+2021-05-13 01:50:18 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:18 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: Architecture Evaluator started.
+2021-05-13 01:50:19 INFO  GuavaMasterReportingPort:35 - ADAPTATION_MANAGER: Parsed script /usr/share/kubow/targets/system/adaptation/tactics.s
+2021-05-13 01:50:19 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:19 INFO  Rainbow:694 - Delegate: master[ADAPTATION_MANAGER]: Parsed script /usr/share/kubow/targets/system/adaptation/tactics.s
+2021-05-13 01:50:19 INFO  GuavaMasterReportingPort:35 - ADAPTATION_MANAGER: Parsed script /usr/share/kubow/targets/system/adaptation/strategies.s
+2021-05-13 01:50:19 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:19 INFO  GuavaMasterReportingPort:35 - ADAPTATION_MANAGER: Kubow Adaptation Manager started.
+2021-05-13 01:50:19 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:19 INFO  Rainbow:694 - Delegate: master[ADAPTATION_MANAGER]: Parsed script /usr/share/kubow/targets/system/adaptation/strategies.s
+2021-05-13 01:50:19 INFO  Rainbow:694 - Delegate: master[ADAPTATION_MANAGER]: Kubow Adaptation Manager started.
+2021-05-13 01:50:19 INFO  GuavaMasterReportingPort:35 - EXECUTOR: Strategy executor initialized
+2021-05-13 01:50:19 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:19 INFO  Rainbow:694 - Delegate: master[EXECUTOR]: Strategy executor initialized
+2021-05-13 01:50:19 INFO  GuavaMasterReportingPort:35 - EXECUTOR: Rainbow Strategy Executor started.
+2021-05-13 01:50:19 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:19 INFO  Rainbow:694 - Delegate: master[EXECUTOR]: Rainbow Strategy Executor started.
+2021-05-13 01:50:19 INFO  Rainbow:532 - RM: Rainbow Master started.
+2021-05-13 01:50:19 INFO  KubowApplication:79 - Initialized rainbow master
+2021-05-13 01:50:19 INFO  KubowApplication:92 - Trying to initialize rainbow delegate
+2021-05-13 01:50:19 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[DELEGATE]: RD-b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[2021.05.13-01:50:19.314+0000]: Attempting to connecto to master.
+2021-05-13 01:50:19 INFO  Rainbow:340 - Master created management connection with delegate b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4
+2021-05-13 01:50:19 INFO  Rainbow:358 - Sending configuration information to b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4.
+2021-05-13 01:50:19 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[DELEGATE]: RD-b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[2021.05.13-01:50:19.391+0000]: Received configuration information.
+2021-05-13 01:50:19 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[DELEGATE]: RD-b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[2021.05.13-01:50:19.394+0000]: Starting.
+2021-05-13 01:50:19 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[DELEGATE]: RD-b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[2021.05.13-01:50:19.395+0000]: Rainbow Delegate started.
+2021-05-13 01:50:21 INFO  KubowProbe:29 - Probe DeploymentPropertiesProbe@127.0.0.1 initialized
+2021-05-13 01:50:21 INFO  KubowProbe:29 - Probe ReplicasHighaProbe@127.0.0.1 initialized
+2021-05-13 01:50:21 INFO  PrometheusClient:25 - Prometheus client successfully initialized for host http://prometheus.default.svc:9090
+2021-05-13 01:50:21 INFO  KubowProbe:29 - Probe ReplicasHighbProbe@127.0.0.1 initialized
+2021-05-13 01:50:21 INFO  PrometheusClient:25 - Prometheus client successfully initialized for host http://prometheus.default.svc:9090
+2021-05-13 01:50:21 INFO  KubowProbe:29 - Probe ReplicasLowaProbe@127.0.0.1 initialized
+2021-05-13 01:50:21 INFO  PrometheusClient:25 - Prometheus client successfully initialized for host http://prometheus.default.svc:9090
+2021-05-13 01:50:21 INFO  KubowProbe:29 - Probe ReplicasLowbProbe@127.0.0.1 initialized
+2021-05-13 01:50:21 INFO  PrometheusClient:25 - Prometheus client successfully initialized for host http://prometheus.default.svc:9090
+2021-05-13 01:50:21 INFO  KubowProbe:29 - Probe ReplicasTextaProbe@127.0.0.1 initialized
+2021-05-13 01:50:21 INFO  PrometheusClient:25 - Prometheus client successfully initialized for host http://prometheus.default.svc:9090
+2021-05-13 01:50:21 INFO  KubowProbe:29 - Probe ReplicasTextbProbe@127.0.0.1 initialized
+2021-05-13 01:50:21 INFO  PrometheusClient:25 - Prometheus client successfully initialized for host http://prometheus.default.svc:9090
+2021-05-13 01:50:21 INFO  KubowProbe:29 - Probe SloProbe@127.0.0.1 initialized
+2021-05-13 01:50:21 INFO  PrometheusClient:25 - Prometheus client successfully initialized for host http://prometheus.default.svc:9090
+2021-05-13 01:50:21 INFO  KubowProbe:29 - Probe StabilityProbe@127.0.0.1 initialized
+2021-05-13 01:50:21 INFO  PrometheusClient:25 - Prometheus client successfully initialized for host http://prometheus.default.svc:9090
+2021-05-13 01:50:21 INFO  KubowProbe:29 - Probe TrafficProbe@127.0.0.1 initialized
+2021-05-13 01:50:21 INFO  PrometheusClient:25 - Prometheus client successfully initialized for host http://prometheus.default.svc:9090
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Created KubeZnnInfoGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Gauge Manager: A gauge was created KubeZnnInfoGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Created KubeZnnInfoGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Gauge Manager: A gauge was created KubeZnnInfoGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G - Kubow Gauge started.
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Created ReplicasHighaGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G - Kubow Gauge started.
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Created ReplicasHighaGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Gauge Manager: A gauge was created ReplicasHighaGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Created ReplicasHighbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Gauge Manager: A gauge was created ReplicasHighaGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Created ReplicasHighbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Gauge Manager: A gauge was created ReplicasHighbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G - Kubow Gauge started.
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Created ReplicasLowaGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Gauge Manager: A gauge was created ReplicasLowaGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Gauge Manager: A gauge was created ReplicasHighbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Gauge Manager: A gauge was created ReplicasLowaGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Created ReplicasLowaGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G - Kubow Gauge started.
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Created ReplicasLowbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G - Kubow Gauge started.
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Gauge Manager: A gauge was created ReplicasLowbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Created ReplicasLowbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Gauge Manager: A gauge was created ReplicasLowbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Created ReplicasTextbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G - Kubow Gauge started.
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Gauge Manager: A gauge was created ReplicasTextbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Created ReplicasTextbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Created ReplicasTextaGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Gauge Manager: A gauge was created ReplicasTextaGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Gauge Manager: A gauge was created ReplicasTextbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Created SloGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Gauge Manager: A gauge was created ReplicasTextaGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Created SloGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G - Kubow Gauge started.
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Gauge Manager: A gauge was created SloGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G - Kubow Gauge started.
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G - Kubow Gauge started.
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Created TrafficGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Created ReplicasTextaGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Gauge Manager: A gauge was created TrafficGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G - Kubow Gauge started.
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Created StabilityGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Gauge Manager: A gauge was created TrafficGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Gauge Manager: A gauge was created StabilityGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Created TrafficGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: ReplicasLowaGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Gauge Manager: A gauge was created SloGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: ReplicasHighaGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: ReplicasLowaGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: ReplicasLowbGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Gauge Manager: A gauge was created StabilityGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: ReplicasLowbGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 01:50:21 INFO  RollOutEffector:128 - E[rollOut] + rollOut@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: ReplicasTextaGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Created StabilityGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: ReplicasTextaGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[EFFECTOR_MANAGER]: Java-based IEffector rollOut
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: ReplicasHighaGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: ReplicasHighbGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:21 INFO  ScaleDownEffector:128 - E[scaleDown] + scaleDown@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: ReplicasTextbGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: ReplicasHighbGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: KubeZnnInfoGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:21 INFO  ScaleUpEffector:128 - E[scaleUp] + scaleUp@127.0.0.1
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: ReplicasTextbGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[EFFECTOR_MANAGER]: Java-based IEffector scaleDown
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: KubeZnnInfoGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[EFFECTOR_MANAGER]: Java-based IEffector scaleUp
+2021-05-13 01:50:21 INFO  KubowEffectorManager:146 - EffectorManager: An effector was created scaleUp@127.0.0.1
+2021-05-13 01:50:21 INFO  KubowEffectorManager:146 - EffectorManager: An effector was created rollOut@127.0.0.1
+2021-05-13 01:50:21 INFO  KubowEffectorManager:146 - EffectorManager: An effector was created scaleDown@127.0.0.1
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: SloGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: StabilityGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: SloGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: StabilityGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: TrafficGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 01:50:21 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:21 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: TrafficGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 01:50:24 INFO  DataLogger:200 - #adapt-select-begin
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:35 - ADAPTATION_MANAGER: Checking if adaptation is required
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:24 INFO  Rainbow:694 - Delegate: master[ADAPTATION_MANAGER]: Checking if adaptation is required
+2021-05-13 01:50:24 INFO  DataLogger:202 - #adapt-select-end
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:35 - ADAPTATION_MANAGER: >> do strategy: ImproveFidelity
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:24 INFO  Rainbow:694 - Delegate: master[ADAPTATION_MANAGER]: >> do strategy: ImproveFidelity
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:35 - ADAPTATION_MANAGER: ImproveFidelity
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:24 INFO  Rainbow:694 - Delegate: master[ADAPTATION_MANAGER]: ImproveFidelity
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:35 - EXECUTOR: Dequeued an adaptation
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:35 - EXECUTOR: [[Rainbow Strategy Executor]]: Executing an adaptation
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:24 INFO  Rainbow:694 - Delegate: master[EXECUTOR]: Dequeued an adaptation
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:35 - EXECUTOR: Visiting execution leaf
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:24 INFO  Rainbow:694 - Delegate: master[EXECUTOR]: [[Rainbow Strategy Executor]]: Executing an adaptation
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:35 - EXECUTOR: [[Rainbow Strategy Executor]]: Executing Strategy ImproveFidelity
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:24 INFO  Rainbow:694 - Delegate: master[EXECUTOR]: Visiting execution leaf
+2021-05-13 01:50:24 INFO  Rainbow:694 - Delegate: master[EXECUTOR]: [[Rainbow Strategy Executor]]: Executing Strategy ImproveFidelity
+2021-05-13 01:50:24 INFO  Ohana:1230 - t0 expression condition! true
+2021-05-13 01:50:24 INFO  Ohana:841 - t1 DEFAULT condition!
+2021-05-13 01:50:24 INFO  Ohana:1252 - Tactic action! raiseFidelity
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:35 - EXECUTOR: [[Rainbow Strategy Executor]]: Executing node t0:raiseFidelity
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:24 INFO  Rainbow:694 - Delegate: master[EXECUTOR]: [[Rainbow Strategy Executor]]: Executing node t0:raiseFidelity
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:35 - EXECUTOR: [[Rainbow Strategy Executor]]: Tactic started: raiseFidelity([])
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:24 INFO  Rainbow:694 - Delegate: master[EXECUTOR]: [[Rainbow Strategy Executor]]: Tactic started: raiseFidelity([])
+2021-05-13 01:50:24 INFO  Ohana:459 - Tactic expected effect: false
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:35 - EXECUTOR: [[Rainbow Strategy Executor]]: Tactic finished: raiseFidelity
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:24 INFO  Rainbow:694 - Delegate: master[EXECUTOR]: [[Rainbow Strategy Executor]]: Tactic finished: raiseFidelity
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:35 - EXECUTOR: [[Rainbow Strategy Executor]]: Settling node t0:raiseFidelity@10,000
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:24 INFO  Rainbow:694 - Delegate: master[EXECUTOR]: [[Rainbow Strategy Executor]]: Settling node t0:raiseFidelity@10,000
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:35 - EXECUTOR: [[Rainbow Strategy Executor]]: Tactic raiseFidelity @10,000 check effect
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:24 INFO  Rainbow:694 - Delegate: master[EXECUTOR]: [[Rainbow Strategy Executor]]: Tactic raiseFidelity @10,000 check effect
+2021-05-13 01:50:24 INFO  Ohana:133 - Timer started: 1620870624399 [ ([238 176 112] ([432 238 176 112] ([434 432 238 176 112] ([439 434 432 238 176 112] ([443 439 434 432 238 176 112] ([448 443 439 434 432 238 176 112] ([453 448 443 439 434 432 238 176 112] ([458 453 448 443 439 434 432 238 176 112] ([463 458 453 448 443 439 434 432 238 176 112] ([468 463 458 453 448 443 439 434 432 238 176 112] ([473 468 463 458 453 448 443 439 434 432 238 176 112] ([478 473 468 463 458 453 448 443 439 434 432 238 176 112] ([493 478 473 468 463 458 453 448 443 439 434 432 238 176 112] ([496 493 478 473 468 463 458 453 448 443 439 434 432 238 176 112] highMode)))))))) || ([455 448 443 439 434 432 238 176 112] ([453 455 448 443 439 434 432 238 176 112] ([458 453 455 448 443 439 434 432 238 176 112] ([463 458 453 455 448 443 439 434 432 238 176 112] ([468 463 458 453 455 448 443 439 434 432 238 176 112] ([473 468 463 458 453 455 448 443 439 434 432 238 176 112] ([478 473 468 463 458 453 455 448 443 439 434 432 238 176 112] ([493 478 473 468 463 458 453 455 448 443 439 434 432 238 176 112] ([496 493 478 473 468 463 458 453 455 448 443 439 434 432 238 176 112] lowMode))))))))))))))) ]
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[strategy-execution-KubeZnnSystem:Acme:ExecutionHistory/strategyExecutionState.null([KubeZnnSystem:Acme, AdapttionTree, ADAPTATION_EXECUTING, ])]
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:24 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[strategy-execution-KubeZnnSystem:Acme:ExecutionHistory/strategyExecutionState.null([KubeZnnSystem:Acme, AdapttionTree, ADAPTATION_EXECUTING, ])]
+2021-05-13 01:50:24 INFO  KubowApplication:98 - Initialized rainbow delegate with ID b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4
+2021-05-13 01:50:24 INFO  Rainbow:532 - RM: Starting probes
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[strategy-execution-KubeZnnSystem:Acme:ExecutionHistory/strategyExecutionState.kubow.strategies.ImproveFidelity([KubeZnnSystem:Acme, Strategy, STRATEGY_EXECUTING, ])]
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:24 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[strategy-execution-KubeZnnSystem:Acme:ExecutionHistory/strategyExecutionState.kubow.strategies.ImproveFidelity([KubeZnnSystem:Acme, Strategy, STRATEGY_EXECUTING, ])]
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[strategy-execution-KubeZnnSystem:Acme:ExecutionHistory/strategyExecutionState.kubow.strategies.ImproveFidelity.t0([KubeZnnSystem:Acme, Strategy, NODE_EXECUTING, ])]
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:24 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[strategy-execution-KubeZnnSystem:Acme:ExecutionHistory/strategyExecutionState.kubow.strategies.ImproveFidelity.t0([KubeZnnSystem:Acme, Strategy, NODE_EXECUTING, ])]
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[strategy-execution-KubeZnnSystem:Acme:ExecutionHistory/strategyExecutionState.kubow.strategies.raiseFidelity([KubeZnnSystem:Acme, Tactic, TACTIC_EXECUTING, Called by kubow.strategies.ImproveFidelity])]
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:24 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[strategy-execution-KubeZnnSystem:Acme:ExecutionHistory/strategyExecutionState.kubow.strategies.raiseFidelity([KubeZnnSystem:Acme, Tactic, TACTIC_EXECUTING, Called by kubow.strategies.ImproveFidelity])]
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[strategy-execution-KubeZnnSystem:Acme:ExecutionHistory/strategyExecutionState.kubow.strategies.raiseFidelity([KubeZnnSystem:Acme, Tactic, TACTIC_SETTLING, 10000])]
+2021-05-13 01:50:24 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:24 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[strategy-execution-KubeZnnSystem:Acme:ExecutionHistory/strategyExecutionState.kubow.strategies.raiseFidelity([KubeZnnSystem:Acme, Tactic, TACTIC_SETTLING, 10000])]
+2021-05-13 01:50:25 INFO  KubowProbe:41 - Probe ReplicasTextaProbe@127.0.0.1 has collected nothing
+2021-05-13 01:50:25 INFO  KubowProbe:41 - Probe ReplicasHighbProbe@127.0.0.1 has collected nothing
+2021-05-13 01:50:25 INFO  KubowProbe:41 - Probe ReplicasLowaProbe@127.0.0.1 has collected nothing
+2021-05-13 01:50:25 INFO  PrometheusProbe:49 - P[SloProbe@127.0.0.1] {"slo":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:25 INFO  PrometheusProbe:49 - P[ReplicasLowbProbe@127.0.0.1] {"replicasLowb":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:25 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[SloProbe@127.0.0.1] {"slo":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:25 INFO  PrometheusProbe:49 - P[StabilityProbe@127.0.0.1] {"stability":0.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:25 INFO  PrometheusProbe:49 - P[ReplicasHighaProbe@127.0.0.1] {"replicasHigha":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:25 INFO  PrometheusProbe:49 - P[ReplicasTextbProbe@127.0.0.1] {"replicasTextb":2.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:25 INFO  PrometheusProbe:49 - P[TrafficProbe@127.0.0.1] {"traffic":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:25 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[ReplicasLowbProbe@127.0.0.1] {"replicasLowb":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:25 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[TrafficProbe@127.0.0.1] {"traffic":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:25 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[StabilityProbe@127.0.0.1] {"stability":0.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:25 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[ReplicasTextbProbe@127.0.0.1] {"replicasTextb":2.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:25 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[ReplicasHighaProbe@127.0.0.1] {"replicasHigha":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:25 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[SloGauge:KubowGaugeT@127.0.0.1]: kubeZnnS.setServiceProperty([{"slo":1.0,"namespace":"default","name":"kube-znn"}, <slo>)])
+2021-05-13 01:50:25 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[StabilityGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"stability":0.0,"namespace":"default","name":"kube-znn"}, <stability>)])
+2021-05-13 01:50:25 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[ReplicasHighaGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"replicasHigha":1.0,"namespace":"default","name":"kube-znn"}, <replicasHigha>)])
+2021-05-13 01:50:25 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[ReplicasLowbGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"replicasLowb":1.0,"namespace":"default","name":"kube-znn"}, <replicasLowb>)])
+2021-05-13 01:50:25 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[ReplicasTextbGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"replicasTextb":2.0,"namespace":"default","name":"kube-znn"}, <replicasTextb>)])
+2021-05-13 01:50:25 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[TrafficGauge:KubowGaugeT@127.0.0.1]: kubeZnnS.setServiceProperty([{"traffic":1.0,"namespace":"default","name":"kube-znn"}, <traffic>)])
+2021-05-13 01:50:25 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[KubeZnnSystem:Acme/settraffic.kubeZnnS([{"traffic":1.0,"namespace":"default","name":"kube-znn"}])]<TrafficGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:25 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:25 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[KubeZnnSystem:Acme/settraffic.kubeZnnS([{"traffic":1.0,"namespace":"default","name":"kube-znn"}])]<TrafficGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[KubeZnnSystem:Acme/setreplicasTextb.kubeZnnD([{"replicasTextb":2.0,"namespace":"default","name":"kube-znn"}])]<ReplicasTextbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:26 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[KubeZnnSystem:Acme/setreplicasTextb.kubeZnnD([{"replicasTextb":2.0,"namespace":"default","name":"kube-znn"}])]<ReplicasTextbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[KubeZnnSystem:Acme/setreplicasLowb.kubeZnnD([{"replicasLowb":1.0,"namespace":"default","name":"kube-znn"}])]<ReplicasLowbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:26 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[KubeZnnSystem:Acme/setreplicasLowb.kubeZnnD([{"replicasLowb":1.0,"namespace":"default","name":"kube-znn"}])]<ReplicasLowbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:26 INFO  Ohana:635 - => awaitTacticSettling done! true
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:35 - EXECUTOR: [[Rainbow Strategy Executor]]: Tactic raiseFidelity effect: true
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:26 INFO  Rainbow:694 - Delegate: master[EXECUTOR]: [[Rainbow Strategy Executor]]: Tactic raiseFidelity effect: true
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:35 - EXECUTOR: [[Rainbow Strategy Executor]]: Finished executing node t0:raiseFidelity->SUCCESS
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:26 INFO  Rainbow:694 - Delegate: master[EXECUTOR]: [[Rainbow Strategy Executor]]: Finished executing node t0:raiseFidelity->SUCCESS
+2021-05-13 01:50:26 INFO  Ohana:926 - t0a SUCCESS condition! true
+2021-05-13 01:50:26 INFO  Ohana:1110 - DONE action!
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:35 - EXECUTOR: [[Rainbow Strategy Executor]]: Finished executing node t0a:done->SUCCESS
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:26 INFO  Rainbow:694 - Delegate: master[EXECUTOR]: [[Rainbow Strategy Executor]]: Finished executing node t0a:done->SUCCESS
+2021-05-13 01:50:26 INFO  Ohana:710 - Strategy execution trail: [*0*, t0, t0a]
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:35 - EXECUTOR: [[Rainbow Strategy Executor]]: Outcome(ImproveFidelity): SUCCESS
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[KubeZnnSystem:Acme/setreplicasHigha.kubeZnnD([{"replicasHigha":1.0,"namespace":"default","name":"kube-znn"}])]<ReplicasHighaGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:35 - EXECUTOR: Visiting execution leaf
+2021-05-13 01:50:26 INFO  Rainbow:694 - Delegate: master[EXECUTOR]: [[Rainbow Strategy Executor]]: Outcome(ImproveFidelity): SUCCESS
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:26 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[KubeZnnSystem:Acme/setreplicasHigha.kubeZnnD([{"replicasHigha":1.0,"namespace":"default","name":"kube-znn"}])]<ReplicasHighaGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:26 INFO  Rainbow:694 - Delegate: master[EXECUTOR]: Visiting execution leaf
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:35 - ADAPTATION_MANAGER: *S* outcome: ImproveFidelity;SUCCESS
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:26 INFO  Rainbow:694 - Delegate: master[ADAPTATION_MANAGER]: *S* outcome: ImproveFidelity;SUCCESS
+2021-05-13 01:50:26 INFO  DataLogger:182 - #adapt-outcome: ImproveFidelity;SUCCESS
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:35 - ADAPTATION_MANAGER: History: ImproveFidelity[1, 1, 0, 0]
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:26 INFO  Rainbow:694 - Delegate: master[ADAPTATION_MANAGER]: History: ImproveFidelity[1, 1, 0, 0]
+2021-05-13 01:50:26 INFO  DataLogger:380 - #adapt-stat: ImproveFidelity[1, 1, 0, 0]
+2021-05-13 01:50:26 INFO  DataLogger:187 - #adapt-end
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[KubeZnnSystem:Acme/setstability.kubeZnnD([{"stability":0.0,"namespace":"default","name":"kube-znn"}])]<StabilityGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:26 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[KubeZnnSystem:Acme/setstability.kubeZnnD([{"stability":0.0,"namespace":"default","name":"kube-znn"}])]<StabilityGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[strategy-execution-KubeZnnSystem:Acme:ExecutionHistory/strategyExecutionState.kubow.strategies.raiseFidelity([KubeZnnSystem:Acme, Tactic, TACTIC_DONE, true])]
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:26 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[strategy-execution-KubeZnnSystem:Acme:ExecutionHistory/strategyExecutionState.kubow.strategies.raiseFidelity([KubeZnnSystem:Acme, Tactic, TACTIC_DONE, true])]
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[strategy-execution-KubeZnnSystem:Acme:ExecutionHistory/strategyExecutionState.null([KubeZnnSystem:Acme, AdapttionTree, ADAPTATION_DONE, ])]
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:26 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[strategy-execution-KubeZnnSystem:Acme:ExecutionHistory/strategyExecutionState.null([KubeZnnSystem:Acme, AdapttionTree, ADAPTATION_DONE, ])]
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[strategy-execution-KubeZnnSystem:Acme:ExecutionHistory/strategyExecutionState.kubow.strategies.ImproveFidelity([KubeZnnSystem:Acme, Strategy, STRATEGY_DONE, SUCCESS])]
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:26 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[strategy-execution-KubeZnnSystem:Acme:ExecutionHistory/strategyExecutionState.kubow.strategies.ImproveFidelity([KubeZnnSystem:Acme, Strategy, STRATEGY_DONE, SUCCESS])]
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[strategy-execution-KubeZnnSystem:Acme:ExecutionHistory/strategyExecutionState.kubow.strategies.ImproveFidelity.t0a([KubeZnnSystem:Acme, Strategy, NODE_DONE, SUCCESS])]
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:26 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[strategy-execution-KubeZnnSystem:Acme:ExecutionHistory/strategyExecutionState.kubow.strategies.ImproveFidelity.t0a([KubeZnnSystem:Acme, Strategy, NODE_DONE, SUCCESS])]
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[strategy-execution-KubeZnnSystem:Acme:ExecutionHistory/strategyExecutionState.kubow.strategies.ImproveFidelity.t0a([KubeZnnSystem:Acme, Strategy, NODE_EXECUTING, ])]
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:26 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[strategy-execution-KubeZnnSystem:Acme:ExecutionHistory/strategyExecutionState.kubow.strategies.ImproveFidelity.t0a([KubeZnnSystem:Acme, Strategy, NODE_EXECUTING, ])]
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[strategy-execution-KubeZnnSystem:Acme:ExecutionHistory/strategyExecutionState.kubow.strategies.ImproveFidelity.t0([KubeZnnSystem:Acme, Strategy, NODE_DONE, SUCCESS])]
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:26 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[strategy-execution-KubeZnnSystem:Acme:ExecutionHistory/strategyExecutionState.kubow.strategies.ImproveFidelity.t0([KubeZnnSystem:Acme, Strategy, NODE_DONE, SUCCESS])]
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Adaptation currently occuring
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Checking constraints
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:26 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Adaptation currently occuring
+2021-05-13 01:50:26 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Checking constraints
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[strategy-execution-KubeZnnSystem:Acme:ExecutionHistory/recordTacticDuration.kubow.strategies.raiseFidelity([1863, true])]
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:26 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[strategy-execution-KubeZnnSystem:Acme:ExecutionHistory/recordTacticDuration.kubow.strategies.raiseFidelity([1863, true])]
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Model KubeZnnSystem:Acme ok
+2021-05-13 01:50:26 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:26 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Model KubeZnnSystem:Acme ok
+2021-05-13 01:50:27 INFO  DeploymentInfoProbe:49 - P[DeploymentPropertiesProbe@127.0.0.1] {"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":2}
+2021-05-13 01:50:27 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[DeploymentPropertiesProbe@127.0.0.1] {"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":2}
+2021-05-13 01:50:27 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[KubeZnnInfoGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentInfo([{"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":2}])
+2021-05-13 01:50:27 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[KubeZnnSystem:Acme/setDeploymentInfo.kubeZnnD([{"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":2}])]<KubeZnnInfoGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:27 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:27 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[KubeZnnSystem:Acme/setDeploymentInfo.kubeZnnD([{"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":2}])]<KubeZnnInfoGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:28 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Adaptation currently occuring
+2021-05-13 01:50:28 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:28 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Checking constraints
+2021-05-13 01:50:28 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Adaptation currently occuring
+2021-05-13 01:50:28 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:28 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Checking constraints
+2021-05-13 01:50:28 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Model KubeZnnSystem:Acme Errors: Error in: KubeZnnSystem.kubeZnnD.maxReplicasRule, 
+2021-05-13 01:50:28 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:28 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Model KubeZnnSystem:Acme Errors: Error in: KubeZnnSystem.kubeZnnD.maxReplicasRule, 
+2021-05-13 01:50:28 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[KubeZnnSystem:Acme/setTypecheckResult.self([false])]
+2021-05-13 01:50:28 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:28 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[KubeZnnSystem:Acme/setTypecheckResult.self([false])]
+2021-05-13 01:50:29 INFO  DataLogger:200 - #adapt-select-begin
+2021-05-13 01:50:29 INFO  GuavaMasterReportingPort:35 - ADAPTATION_MANAGER: Checking if adaptation is required
+2021-05-13 01:50:29 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:29 INFO  Rainbow:694 - Delegate: master[ADAPTATION_MANAGER]: Checking if adaptation is required
+2021-05-13 01:50:29 INFO  GuavaMasterReportingPort:35 - ADAPTATION_MANAGER: No applicable Strategies to do an adaptation
+2021-05-13 01:50:29 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:29 INFO  DataLogger:202 - #adapt-select-end
+2021-05-13 01:50:29 INFO  Rainbow:694 - Delegate: master[ADAPTATION_MANAGER]: No applicable Strategies to do an adaptation
+2021-05-13 01:50:29 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[DELEGATE]: RD-b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[2021.05.13-01:50:29.395+0000]: Sending heartbeat.
+2021-05-13 01:50:29 INFO  GuavaMasterReportingPort:35 - MASTER: Heartbeat from b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4@127.0.0.1
+2021-05-13 01:50:29 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:29 INFO  Rainbow:694 - Delegate: master[MASTER]: Heartbeat from b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4@127.0.0.1
+2021-05-13 01:50:30 INFO  KubowProbe:41 - Probe ReplicasTextaProbe@127.0.0.1 has collected nothing
+2021-05-13 01:50:30 INFO  KubowProbe:41 - Probe ReplicasHighbProbe@127.0.0.1 has collected nothing
+2021-05-13 01:50:30 INFO  KubowProbe:41 - Probe ReplicasLowaProbe@127.0.0.1 has collected nothing
+2021-05-13 01:50:30 INFO  PrometheusProbe:49 - P[SloProbe@127.0.0.1] {"slo":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:30 INFO  PrometheusProbe:49 - P[ReplicasLowbProbe@127.0.0.1] {"replicasLowb":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:30 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[SloProbe@127.0.0.1] {"slo":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:30 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[ReplicasLowbProbe@127.0.0.1] {"replicasLowb":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:30 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[ReplicasLowbGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"replicasLowb":1.0,"namespace":"default","name":"kube-znn"}, <replicasLowb>)])
+2021-05-13 01:50:30 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[SloGauge:KubowGaugeT@127.0.0.1]: kubeZnnS.setServiceProperty([{"slo":1.0,"namespace":"default","name":"kube-znn"}, <slo>)])
+2021-05-13 01:50:30 INFO  PrometheusProbe:49 - P[StabilityProbe@127.0.0.1] {"stability":0.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:30 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[StabilityProbe@127.0.0.1] {"stability":0.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:30 INFO  PrometheusProbe:49 - P[ReplicasHighaProbe@127.0.0.1] {"replicasHigha":2.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:30 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[ReplicasHighaProbe@127.0.0.1] {"replicasHigha":2.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:30 INFO  PrometheusProbe:49 - P[TrafficProbe@127.0.0.1] {"traffic":1.2,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:30 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[TrafficProbe@127.0.0.1] {"traffic":1.2,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:30 INFO  PrometheusProbe:49 - P[ReplicasTextbProbe@127.0.0.1] {"replicasTextb":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:30 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[ReplicasTextbProbe@127.0.0.1] {"replicasTextb":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:30 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[ReplicasHighaGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"replicasHigha":2.0,"namespace":"default","name":"kube-znn"}, <replicasHigha>)])
+2021-05-13 01:50:30 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[ReplicasTextbGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"replicasTextb":1.0,"namespace":"default","name":"kube-znn"}, <replicasTextb>)])
+2021-05-13 01:50:30 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[StabilityGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"stability":0.0,"namespace":"default","name":"kube-znn"}, <stability>)])
+2021-05-13 01:50:30 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[TrafficGauge:KubowGaugeT@127.0.0.1]: kubeZnnS.setServiceProperty([{"traffic":1.2,"namespace":"default","name":"kube-znn"}, <traffic>)])
+2021-05-13 01:50:30 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[KubeZnnSystem:Acme/setreplicasHigha.kubeZnnD([{"replicasHigha":2.0,"namespace":"default","name":"kube-znn"}])]<ReplicasHighaGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:30 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:30 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[KubeZnnSystem:Acme/setreplicasHigha.kubeZnnD([{"replicasHigha":2.0,"namespace":"default","name":"kube-znn"}])]<ReplicasHighaGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:30 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Adaptation currently occuring
+2021-05-13 01:50:30 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:30 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Checking constraints
+2021-05-13 01:50:30 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Adaptation currently occuring
+2021-05-13 01:50:30 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:30 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Checking constraints
+2021-05-13 01:50:30 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Model KubeZnnSystem:Acme Errors: Still errors in: KubeZnnSystem.kubeZnnD.maxReplicasRule, 
+2021-05-13 01:50:30 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:30 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Model KubeZnnSystem:Acme Errors: Still errors in: KubeZnnSystem.kubeZnnD.maxReplicasRule, 
+2021-05-13 01:50:30 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[KubeZnnSystem:Acme/setreplicasTextb.kubeZnnD([{"replicasTextb":1.0,"namespace":"default","name":"kube-znn"}])]<ReplicasTextbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:30 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:30 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[KubeZnnSystem:Acme/setreplicasTextb.kubeZnnD([{"replicasTextb":1.0,"namespace":"default","name":"kube-znn"}])]<ReplicasTextbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:30 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[KubeZnnSystem:Acme/settraffic.kubeZnnS([{"traffic":1.2,"namespace":"default","name":"kube-znn"}])]<TrafficGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:30 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:30 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[KubeZnnSystem:Acme/settraffic.kubeZnnS([{"traffic":1.2,"namespace":"default","name":"kube-znn"}])]<TrafficGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:32 INFO  DeploymentInfoProbe:49 - P[DeploymentPropertiesProbe@127.0.0.1] {"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":2}
+2021-05-13 01:50:32 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[DeploymentPropertiesProbe@127.0.0.1] {"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":2}
+2021-05-13 01:50:32 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[KubeZnnInfoGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentInfo([{"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":2}])
+2021-05-13 01:50:32 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[KubeZnnSystem:Acme/setDeploymentInfo.kubeZnnD([{"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":2}])]<KubeZnnInfoGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:32 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:32 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[KubeZnnSystem:Acme/setDeploymentInfo.kubeZnnD([{"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":2}])]<KubeZnnInfoGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:32 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Adaptation currently occuring
+2021-05-13 01:50:32 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:32 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Checking constraints
+2021-05-13 01:50:32 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:32 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Adaptation currently occuring
+2021-05-13 01:50:32 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Checking constraints
+2021-05-13 01:50:32 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Model KubeZnnSystem:Acme Errors: Still errors in: KubeZnnSystem.kubeZnnD.maxReplicasRule, 
+2021-05-13 01:50:32 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:32 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Model KubeZnnSystem:Acme Errors: Still errors in: KubeZnnSystem.kubeZnnD.maxReplicasRule, 
+2021-05-13 01:50:34 INFO  DataLogger:200 - #adapt-select-begin
+2021-05-13 01:50:34 INFO  GuavaMasterReportingPort:35 - ADAPTATION_MANAGER: Checking if adaptation is required
+2021-05-13 01:50:34 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:34 INFO  Rainbow:694 - Delegate: master[ADAPTATION_MANAGER]: Checking if adaptation is required
+2021-05-13 01:50:34 INFO  GuavaMasterReportingPort:35 - ADAPTATION_MANAGER: No applicable Strategies to do an adaptation
+2021-05-13 01:50:34 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:34 INFO  Rainbow:694 - Delegate: master[ADAPTATION_MANAGER]: No applicable Strategies to do an adaptation
+2021-05-13 01:50:34 INFO  DataLogger:202 - #adapt-select-end
+2021-05-13 01:50:35 INFO  KubowProbe:41 - Probe ReplicasTextaProbe@127.0.0.1 has collected nothing
+2021-05-13 01:50:35 INFO  KubowProbe:41 - Probe ReplicasHighbProbe@127.0.0.1 has collected nothing
+2021-05-13 01:50:35 INFO  KubowProbe:41 - Probe ReplicasLowaProbe@127.0.0.1 has collected nothing
+2021-05-13 01:50:35 INFO  PrometheusProbe:49 - P[ReplicasLowbProbe@127.0.0.1] {"replicasLowb":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:35 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[ReplicasLowbProbe@127.0.0.1] {"replicasLowb":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:35 INFO  PrometheusProbe:49 - P[SloProbe@127.0.0.1] {"slo":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:35 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[SloProbe@127.0.0.1] {"slo":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:35 INFO  PrometheusProbe:49 - P[StabilityProbe@127.0.0.1] {"stability":0.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:35 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[StabilityProbe@127.0.0.1] {"stability":0.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:35 INFO  PrometheusProbe:49 - P[ReplicasHighaProbe@127.0.0.1] {"replicasHigha":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:35 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[ReplicasHighaProbe@127.0.0.1] {"replicasHigha":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:35 INFO  PrometheusProbe:49 - P[TrafficProbe@127.0.0.1] {"traffic":1.4,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:35 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[TrafficProbe@127.0.0.1] {"traffic":1.4,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:35 INFO  PrometheusProbe:49 - P[ReplicasTextbProbe@127.0.0.1] {"replicasTextb":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:35 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[ReplicasTextbProbe@127.0.0.1] {"replicasTextb":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:35 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[ReplicasHighaGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"replicasHigha":1.0,"namespace":"default","name":"kube-znn"}, <replicasHigha>)])
+2021-05-13 01:50:35 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[ReplicasLowbGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"replicasLowb":1.0,"namespace":"default","name":"kube-znn"}, <replicasLowb>)])
+2021-05-13 01:50:35 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[SloGauge:KubowGaugeT@127.0.0.1]: kubeZnnS.setServiceProperty([{"slo":1.0,"namespace":"default","name":"kube-znn"}, <slo>)])
+2021-05-13 01:50:35 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[ReplicasTextbGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"replicasTextb":1.0,"namespace":"default","name":"kube-znn"}, <replicasTextb>)])
+2021-05-13 01:50:35 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[StabilityGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"stability":0.0,"namespace":"default","name":"kube-znn"}, <stability>)])
+2021-05-13 01:50:35 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[TrafficGauge:KubowGaugeT@127.0.0.1]: kubeZnnS.setServiceProperty([{"traffic":1.4,"namespace":"default","name":"kube-znn"}, <traffic>)])
+2021-05-13 01:50:35 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[KubeZnnSystem:Acme/setreplicasHigha.kubeZnnD([{"replicasHigha":1.0,"namespace":"default","name":"kube-znn"}])]<ReplicasHighaGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:35 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:35 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[KubeZnnSystem:Acme/setreplicasHigha.kubeZnnD([{"replicasHigha":1.0,"namespace":"default","name":"kube-znn"}])]<ReplicasHighaGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:35 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[KubeZnnSystem:Acme/settraffic.kubeZnnS([{"traffic":1.4,"namespace":"default","name":"kube-znn"}])]<TrafficGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:35 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:35 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[KubeZnnSystem:Acme/settraffic.kubeZnnS([{"traffic":1.4,"namespace":"default","name":"kube-znn"}])]<TrafficGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:36 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Adaptation currently occuring
+2021-05-13 01:50:36 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:36 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Checking constraints
+2021-05-13 01:50:36 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:36 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Adaptation currently occuring
+2021-05-13 01:50:36 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Checking constraints
+2021-05-13 01:50:36 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Model KubeZnnSystem:Acme Errors: Still errors in: KubeZnnSystem.kubeZnnD.maxReplicasRule, 
+2021-05-13 01:50:36 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:36 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Model KubeZnnSystem:Acme Errors: Still errors in: KubeZnnSystem.kubeZnnD.maxReplicasRule, 
+2021-05-13 01:50:37 INFO  DeploymentInfoProbe:49 - P[DeploymentPropertiesProbe@127.0.0.1] {"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":3}
+2021-05-13 01:50:37 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[DeploymentPropertiesProbe@127.0.0.1] {"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":3}
+2021-05-13 01:50:37 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[KubeZnnInfoGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentInfo([{"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":3}])
+2021-05-13 01:50:37 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[KubeZnnSystem:Acme/setDeploymentInfo.kubeZnnD([{"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":3}])]<KubeZnnInfoGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:37 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:37 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[KubeZnnSystem:Acme/setDeploymentInfo.kubeZnnD([{"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":3}])]<KubeZnnInfoGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:38 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Adaptation currently occuring
+2021-05-13 01:50:38 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:38 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Checking constraints
+2021-05-13 01:50:38 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Adaptation currently occuring
+2021-05-13 01:50:38 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:38 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Checking constraints
+2021-05-13 01:50:38 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Model KubeZnnSystem:Acme Errors: Still errors in: KubeZnnSystem.kubeZnnD.maxReplicasRule, 
+2021-05-13 01:50:38 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:38 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Model KubeZnnSystem:Acme Errors: Still errors in: KubeZnnSystem.kubeZnnD.maxReplicasRule, 
+2021-05-13 01:50:39 INFO  DataLogger:200 - #adapt-select-begin
+2021-05-13 01:50:39 INFO  GuavaMasterReportingPort:35 - ADAPTATION_MANAGER: Checking if adaptation is required
+2021-05-13 01:50:39 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:39 INFO  Rainbow:694 - Delegate: master[ADAPTATION_MANAGER]: Checking if adaptation is required
+2021-05-13 01:50:39 INFO  GuavaMasterReportingPort:35 - ADAPTATION_MANAGER: No applicable Strategies to do an adaptation
+2021-05-13 01:50:39 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:39 INFO  Rainbow:694 - Delegate: master[ADAPTATION_MANAGER]: No applicable Strategies to do an adaptation
+2021-05-13 01:50:39 INFO  DataLogger:202 - #adapt-select-end
+2021-05-13 01:50:39 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[DELEGATE]: RD-b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[2021.05.13-01:50:39.495+0000]: Sending heartbeat.
+2021-05-13 01:50:39 INFO  GuavaMasterReportingPort:35 - MASTER: Heartbeat from b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4@127.0.0.1
+2021-05-13 01:50:39 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:39 INFO  Rainbow:694 - Delegate: master[MASTER]: Heartbeat from b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4@127.0.0.1
+2021-05-13 01:50:40 INFO  KubowProbe:41 - Probe ReplicasTextaProbe@127.0.0.1 has collected nothing
+2021-05-13 01:50:40 INFO  KubowProbe:41 - Probe ReplicasHighbProbe@127.0.0.1 has collected nothing
+2021-05-13 01:50:40 INFO  KubowProbe:41 - Probe ReplicasLowaProbe@127.0.0.1 has collected nothing
+2021-05-13 01:50:40 INFO  PrometheusProbe:49 - P[ReplicasLowbProbe@127.0.0.1] {"replicasLowb":2.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:40 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[ReplicasLowbProbe@127.0.0.1] {"replicasLowb":2.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:40 INFO  PrometheusProbe:49 - P[SloProbe@127.0.0.1] {"slo":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:40 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[SloProbe@127.0.0.1] {"slo":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:40 INFO  PrometheusProbe:49 - P[StabilityProbe@127.0.0.1] {"stability":0.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:40 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[StabilityProbe@127.0.0.1] {"stability":0.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:40 INFO  PrometheusProbe:49 - P[ReplicasHighaProbe@127.0.0.1] {"replicasHigha":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:40 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[ReplicasHighaProbe@127.0.0.1] {"replicasHigha":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:40 INFO  PrometheusProbe:49 - P[TrafficProbe@127.0.0.1] {"traffic":1.4,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:40 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[TrafficProbe@127.0.0.1] {"traffic":1.4,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:40 INFO  PrometheusProbe:49 - P[ReplicasTextbProbe@127.0.0.1] {"replicasTextb":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:40 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[ReplicasTextbProbe@127.0.0.1] {"replicasTextb":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:40 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[ReplicasHighaGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"replicasHigha":1.0,"namespace":"default","name":"kube-znn"}, <replicasHigha>)])
+2021-05-13 01:50:40 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[ReplicasLowbGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"replicasLowb":2.0,"namespace":"default","name":"kube-znn"}, <replicasLowb>)])
+2021-05-13 01:50:40 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[SloGauge:KubowGaugeT@127.0.0.1]: kubeZnnS.setServiceProperty([{"slo":1.0,"namespace":"default","name":"kube-znn"}, <slo>)])
+2021-05-13 01:50:40 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[ReplicasTextbGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"replicasTextb":1.0,"namespace":"default","name":"kube-znn"}, <replicasTextb>)])
+2021-05-13 01:50:40 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[StabilityGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"stability":0.0,"namespace":"default","name":"kube-znn"}, <stability>)])
+2021-05-13 01:50:40 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[TrafficGauge:KubowGaugeT@127.0.0.1]: kubeZnnS.setServiceProperty([{"traffic":1.4,"namespace":"default","name":"kube-znn"}, <traffic>)])
+2021-05-13 01:50:40 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[KubeZnnSystem:Acme/setreplicasLowb.kubeZnnD([{"replicasLowb":2.0,"namespace":"default","name":"kube-znn"}])]<ReplicasLowbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:40 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:40 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[KubeZnnSystem:Acme/setreplicasLowb.kubeZnnD([{"replicasLowb":2.0,"namespace":"default","name":"kube-znn"}])]<ReplicasLowbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:40 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Adaptation currently occuring
+2021-05-13 01:50:40 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:40 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Checking constraints
+2021-05-13 01:50:40 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:40 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Adaptation currently occuring
+2021-05-13 01:50:40 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Checking constraints
+2021-05-13 01:50:40 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Model KubeZnnSystem:Acme Errors: Still errors in: KubeZnnSystem.kubeZnnD.maxReplicasRule, 
+2021-05-13 01:50:40 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:40 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Model KubeZnnSystem:Acme Errors: Still errors in: KubeZnnSystem.kubeZnnD.maxReplicasRule, 
+2021-05-13 01:50:42 INFO  DeploymentInfoProbe:49 - P[DeploymentPropertiesProbe@127.0.0.1] {"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":4}
+2021-05-13 01:50:42 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[DeploymentPropertiesProbe@127.0.0.1] {"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":4}
+2021-05-13 01:50:42 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[KubeZnnInfoGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentInfo([{"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":4}])
+2021-05-13 01:50:42 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[KubeZnnSystem:Acme/setDeploymentInfo.kubeZnnD([{"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":4}])]<KubeZnnInfoGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:42 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:42 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[KubeZnnSystem:Acme/setDeploymentInfo.kubeZnnD([{"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":4}])]<KubeZnnInfoGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:42 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Adaptation currently occuring
+2021-05-13 01:50:42 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:42 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Checking constraints
+2021-05-13 01:50:42 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:42 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Adaptation currently occuring
+2021-05-13 01:50:42 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Checking constraints
+2021-05-13 01:50:42 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Model KubeZnnSystem:Acme Errors: Still errors in: KubeZnnSystem.kubeZnnD.maxReplicasRule, 
+2021-05-13 01:50:42 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:42 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Model KubeZnnSystem:Acme Errors: Still errors in: KubeZnnSystem.kubeZnnD.maxReplicasRule, 
+2021-05-13 01:50:44 INFO  DataLogger:200 - #adapt-select-begin
+2021-05-13 01:50:44 INFO  GuavaMasterReportingPort:35 - ADAPTATION_MANAGER: Checking if adaptation is required
+2021-05-13 01:50:44 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:44 INFO  Rainbow:694 - Delegate: master[ADAPTATION_MANAGER]: Checking if adaptation is required
+2021-05-13 01:50:44 INFO  GuavaMasterReportingPort:35 - ADAPTATION_MANAGER: No applicable Strategies to do an adaptation
+2021-05-13 01:50:44 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:44 INFO  Rainbow:694 - Delegate: master[ADAPTATION_MANAGER]: No applicable Strategies to do an adaptation
+2021-05-13 01:50:44 INFO  DataLogger:202 - #adapt-select-end
+2021-05-13 01:50:45 INFO  KubowProbe:41 - Probe ReplicasTextaProbe@127.0.0.1 has collected nothing
+2021-05-13 01:50:45 INFO  KubowProbe:41 - Probe ReplicasHighbProbe@127.0.0.1 has collected nothing
+2021-05-13 01:50:45 INFO  KubowProbe:41 - Probe ReplicasLowaProbe@127.0.0.1 has collected nothing
+2021-05-13 01:50:45 INFO  PrometheusProbe:49 - P[ReplicasLowbProbe@127.0.0.1] {"replicasLowb":2.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:45 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[ReplicasLowbProbe@127.0.0.1] {"replicasLowb":2.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:45 INFO  PrometheusProbe:49 - P[SloProbe@127.0.0.1] {"slo":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:45 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[SloProbe@127.0.0.1] {"slo":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:45 INFO  PrometheusProbe:49 - P[StabilityProbe@127.0.0.1] {"stability":0.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:45 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[StabilityProbe@127.0.0.1] {"stability":0.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:45 INFO  PrometheusProbe:49 - P[ReplicasHighaProbe@127.0.0.1] {"replicasHigha":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:45 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[ReplicasHighaProbe@127.0.0.1] {"replicasHigha":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:45 INFO  PrometheusProbe:49 - P[TrafficProbe@127.0.0.1] {"traffic":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:45 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[TrafficProbe@127.0.0.1] {"traffic":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:45 INFO  PrometheusProbe:49 - P[ReplicasTextbProbe@127.0.0.1] {"replicasTextb":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:45 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[ReplicasTextbProbe@127.0.0.1] {"replicasTextb":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:45 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[ReplicasHighaGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"replicasHigha":1.0,"namespace":"default","name":"kube-znn"}, <replicasHigha>)])
+2021-05-13 01:50:45 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[ReplicasLowbGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"replicasLowb":2.0,"namespace":"default","name":"kube-znn"}, <replicasLowb>)])
+2021-05-13 01:50:45 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[ReplicasTextbGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"replicasTextb":1.0,"namespace":"default","name":"kube-znn"}, <replicasTextb>)])
+2021-05-13 01:50:45 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[StabilityGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"stability":0.0,"namespace":"default","name":"kube-znn"}, <stability>)])
+2021-05-13 01:50:45 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[TrafficGauge:KubowGaugeT@127.0.0.1]: kubeZnnS.setServiceProperty([{"traffic":1.0,"namespace":"default","name":"kube-znn"}, <traffic>)])
+2021-05-13 01:50:45 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[SloGauge:KubowGaugeT@127.0.0.1]: kubeZnnS.setServiceProperty([{"slo":1.0,"namespace":"default","name":"kube-znn"}, <slo>)])
+2021-05-13 01:50:45 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[KubeZnnSystem:Acme/settraffic.kubeZnnS([{"traffic":1.0,"namespace":"default","name":"kube-znn"}])]<TrafficGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:45 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:45 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[KubeZnnSystem:Acme/settraffic.kubeZnnS([{"traffic":1.0,"namespace":"default","name":"kube-znn"}])]<TrafficGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:46 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Adaptation currently occuring
+2021-05-13 01:50:46 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:46 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Checking constraints
+2021-05-13 01:50:46 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:46 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Adaptation currently occuring
+2021-05-13 01:50:46 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Checking constraints
+2021-05-13 01:50:46 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Model KubeZnnSystem:Acme Errors: Still errors in: KubeZnnSystem.kubeZnnD.maxReplicasRule, 
+2021-05-13 01:50:46 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:46 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Model KubeZnnSystem:Acme Errors: Still errors in: KubeZnnSystem.kubeZnnD.maxReplicasRule, 
+2021-05-13 01:50:47 INFO  DeploymentInfoProbe:49 - P[DeploymentPropertiesProbe@127.0.0.1] {"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":4}
+2021-05-13 01:50:47 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[DeploymentPropertiesProbe@127.0.0.1] {"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":4}
+2021-05-13 01:50:47 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[KubeZnnInfoGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentInfo([{"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":4}])
+2021-05-13 01:50:47 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[KubeZnnSystem:Acme/setDeploymentInfo.kubeZnnD([{"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":4}])]<KubeZnnInfoGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:47 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:47 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[KubeZnnSystem:Acme/setDeploymentInfo.kubeZnnD([{"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":4}])]<KubeZnnInfoGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:48 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Adaptation currently occuring
+2021-05-13 01:50:48 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:48 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Checking constraints
+2021-05-13 01:50:48 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:48 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Adaptation currently occuring
+2021-05-13 01:50:48 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Checking constraints
+2021-05-13 01:50:48 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Model KubeZnnSystem:Acme Errors: Still errors in: KubeZnnSystem.kubeZnnD.maxReplicasRule, 
+2021-05-13 01:50:48 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:48 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Model KubeZnnSystem:Acme Errors: Still errors in: KubeZnnSystem.kubeZnnD.maxReplicasRule, 
+2021-05-13 01:50:49 INFO  DataLogger:200 - #adapt-select-begin
+2021-05-13 01:50:49 INFO  GuavaMasterReportingPort:35 - ADAPTATION_MANAGER: Checking if adaptation is required
+2021-05-13 01:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:49 INFO  Rainbow:694 - Delegate: master[ADAPTATION_MANAGER]: Checking if adaptation is required
+2021-05-13 01:50:49 INFO  GuavaMasterReportingPort:35 - ADAPTATION_MANAGER: No applicable Strategies to do an adaptation
+2021-05-13 01:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:49 INFO  Rainbow:694 - Delegate: master[ADAPTATION_MANAGER]: No applicable Strategies to do an adaptation
+2021-05-13 01:50:49 INFO  DataLogger:202 - #adapt-select-end
+2021-05-13 01:50:49 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[DELEGATE]: RD-b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[2021.05.13-01:50:49.595+0000]: Sending heartbeat.
+2021-05-13 01:50:49 INFO  GuavaMasterReportingPort:35 - MASTER: Heartbeat from b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4@127.0.0.1
+2021-05-13 01:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:49 INFO  Rainbow:694 - Delegate: master[MASTER]: Heartbeat from b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4@127.0.0.1
+2021-05-13 01:50:50 INFO  KubowProbe:41 - Probe ReplicasTextaProbe@127.0.0.1 has collected nothing
+2021-05-13 01:50:50 INFO  KubowProbe:41 - Probe ReplicasHighbProbe@127.0.0.1 has collected nothing
+2021-05-13 01:50:50 INFO  KubowProbe:41 - Probe ReplicasLowaProbe@127.0.0.1 has collected nothing
+2021-05-13 01:50:50 INFO  PrometheusProbe:49 - P[ReplicasLowbProbe@127.0.0.1] {"replicasLowb":2.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:50 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[ReplicasLowbProbe@127.0.0.1] {"replicasLowb":2.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:50 INFO  PrometheusProbe:49 - P[SloProbe@127.0.0.1] {"slo":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:50 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[SloProbe@127.0.0.1] {"slo":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:50 INFO  PrometheusProbe:49 - P[StabilityProbe@127.0.0.1] {"stability":0.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:50 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[StabilityProbe@127.0.0.1] {"stability":0.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:50 INFO  PrometheusProbe:49 - P[ReplicasHighaProbe@127.0.0.1] {"replicasHigha":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:50 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[ReplicasHighaProbe@127.0.0.1] {"replicasHigha":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:50 INFO  PrometheusProbe:49 - P[TrafficProbe@127.0.0.1] {"traffic":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:50 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[TrafficProbe@127.0.0.1] {"traffic":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:50 INFO  PrometheusProbe:49 - P[ReplicasTextbProbe@127.0.0.1] {"replicasTextb":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:50 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[ReplicasTextbProbe@127.0.0.1] {"replicasTextb":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:50 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[ReplicasHighaGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"replicasHigha":1.0,"namespace":"default","name":"kube-znn"}, <replicasHigha>)])
+2021-05-13 01:50:50 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[ReplicasLowbGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"replicasLowb":2.0,"namespace":"default","name":"kube-znn"}, <replicasLowb>)])
+2021-05-13 01:50:50 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[ReplicasTextbGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"replicasTextb":1.0,"namespace":"default","name":"kube-znn"}, <replicasTextb>)])
+2021-05-13 01:50:50 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[StabilityGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"stability":0.0,"namespace":"default","name":"kube-znn"}, <stability>)])
+2021-05-13 01:50:50 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[SloGauge:KubowGaugeT@127.0.0.1]: kubeZnnS.setServiceProperty([{"slo":1.0,"namespace":"default","name":"kube-znn"}, <slo>)])
+2021-05-13 01:50:50 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[TrafficGauge:KubowGaugeT@127.0.0.1]: kubeZnnS.setServiceProperty([{"traffic":1.0,"namespace":"default","name":"kube-znn"}, <traffic>)])
+2021-05-13 01:50:52 INFO  DeploymentInfoProbe:49 - P[DeploymentPropertiesProbe@127.0.0.1] {"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":4}
+2021-05-13 01:50:52 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[DeploymentPropertiesProbe@127.0.0.1] {"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":4}
+2021-05-13 01:50:52 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[KubeZnnInfoGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentInfo([{"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":4}])
+2021-05-13 01:50:52 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[KubeZnnSystem:Acme/setDeploymentInfo.kubeZnnD([{"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":4}])]<KubeZnnInfoGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:52 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:52 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[KubeZnnSystem:Acme/setDeploymentInfo.kubeZnnD([{"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":4}])]<KubeZnnInfoGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:52 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Adaptation currently occuring
+2021-05-13 01:50:52 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:52 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Checking constraints
+2021-05-13 01:50:52 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:52 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Model KubeZnnSystem:Acme Errors: Still errors in: KubeZnnSystem.kubeZnnD.maxReplicasRule, 
+2021-05-13 01:50:52 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:52 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Adaptation currently occuring
+2021-05-13 01:50:52 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Model KubeZnnSystem:Acme Errors: Still errors in: KubeZnnSystem.kubeZnnD.maxReplicasRule, 
+2021-05-13 01:50:52 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Checking constraints
+2021-05-13 01:50:54 INFO  DataLogger:200 - #adapt-select-begin
+2021-05-13 01:50:54 INFO  GuavaMasterReportingPort:35 - ADAPTATION_MANAGER: Checking if adaptation is required
+2021-05-13 01:50:54 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:54 INFO  Rainbow:694 - Delegate: master[ADAPTATION_MANAGER]: Checking if adaptation is required
+2021-05-13 01:50:54 INFO  GuavaMasterReportingPort:35 - ADAPTATION_MANAGER: No applicable Strategies to do an adaptation
+2021-05-13 01:50:54 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:54 INFO  DataLogger:202 - #adapt-select-end
+2021-05-13 01:50:54 INFO  Rainbow:694 - Delegate: master[ADAPTATION_MANAGER]: No applicable Strategies to do an adaptation
+2021-05-13 01:50:55 INFO  KubowProbe:41 - Probe ReplicasTextaProbe@127.0.0.1 has collected nothing
+2021-05-13 01:50:55 INFO  KubowProbe:41 - Probe ReplicasHighbProbe@127.0.0.1 has collected nothing
+2021-05-13 01:50:55 INFO  KubowProbe:41 - Probe ReplicasLowaProbe@127.0.0.1 has collected nothing
+2021-05-13 01:50:55 INFO  PrometheusProbe:49 - P[ReplicasLowbProbe@127.0.0.1] {"replicasLowb":2.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:55 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[ReplicasLowbProbe@127.0.0.1] {"replicasLowb":2.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:55 INFO  PrometheusProbe:49 - P[SloProbe@127.0.0.1] {"slo":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:55 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[SloProbe@127.0.0.1] {"slo":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:55 INFO  PrometheusProbe:49 - P[StabilityProbe@127.0.0.1] {"stability":0.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:55 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[StabilityProbe@127.0.0.1] {"stability":0.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:55 INFO  PrometheusProbe:49 - P[TrafficProbe@127.0.0.1] {"traffic":0.8,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:55 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[TrafficProbe@127.0.0.1] {"traffic":0.8,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:55 INFO  PrometheusProbe:49 - P[ReplicasHighaProbe@127.0.0.1] {"replicasHigha":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:55 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[ReplicasHighaProbe@127.0.0.1] {"replicasHigha":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:55 INFO  PrometheusProbe:49 - P[ReplicasTextbProbe@127.0.0.1] {"replicasTextb":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:55 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[ReplicasTextbProbe@127.0.0.1] {"replicasTextb":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:50:55 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[ReplicasHighaGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"replicasHigha":1.0,"namespace":"default","name":"kube-znn"}, <replicasHigha>)])
+2021-05-13 01:50:55 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[ReplicasLowbGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"replicasLowb":2.0,"namespace":"default","name":"kube-znn"}, <replicasLowb>)])
+2021-05-13 01:50:55 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[SloGauge:KubowGaugeT@127.0.0.1]: kubeZnnS.setServiceProperty([{"slo":1.0,"namespace":"default","name":"kube-znn"}, <slo>)])
+2021-05-13 01:50:55 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[ReplicasTextbGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"replicasTextb":1.0,"namespace":"default","name":"kube-znn"}, <replicasTextb>)])
+2021-05-13 01:50:55 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[StabilityGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"stability":0.0,"namespace":"default","name":"kube-znn"}, <stability>)])
+2021-05-13 01:50:55 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[TrafficGauge:KubowGaugeT@127.0.0.1]: kubeZnnS.setServiceProperty([{"traffic":0.8,"namespace":"default","name":"kube-znn"}, <traffic>)])
+2021-05-13 01:50:55 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[KubeZnnSystem:Acme/settraffic.kubeZnnS([{"traffic":0.8,"namespace":"default","name":"kube-znn"}])]<TrafficGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:55 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:55 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[KubeZnnSystem:Acme/settraffic.kubeZnnS([{"traffic":0.8,"namespace":"default","name":"kube-znn"}])]<TrafficGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:56 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Adaptation currently occuring
+2021-05-13 01:50:56 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:56 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Checking constraints
+2021-05-13 01:50:56 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:56 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Adaptation currently occuring
+2021-05-13 01:50:56 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Checking constraints
+2021-05-13 01:50:56 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Model KubeZnnSystem:Acme Errors: Still errors in: KubeZnnSystem.kubeZnnD.maxReplicasRule, 
+2021-05-13 01:50:56 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:56 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Model KubeZnnSystem:Acme Errors: Still errors in: KubeZnnSystem.kubeZnnD.maxReplicasRule, 
+2021-05-13 01:50:57 INFO  DeploymentInfoProbe:49 - P[DeploymentPropertiesProbe@127.0.0.1] {"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":4}
+2021-05-13 01:50:57 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[DeploymentPropertiesProbe@127.0.0.1] {"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":4}
+2021-05-13 01:50:57 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[KubeZnnInfoGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentInfo([{"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":4}])
+2021-05-13 01:50:57 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[KubeZnnSystem:Acme/setDeploymentInfo.kubeZnnD([{"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":4}])]<KubeZnnInfoGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:57 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:57 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[KubeZnnSystem:Acme/setDeploymentInfo.kubeZnnD([{"desiredReplicas":10,"name":"kube-znn","namespace":"default","currentReplicas":13,"containers":{"nginx":"openresty/openresty:alpine-fat","znn":"cmendes/znn:20k"},"availableReplicas":4}])]<KubeZnnInfoGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:50:58 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Adaptation currently occuring
+2021-05-13 01:50:58 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:58 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Checking constraints
+2021-05-13 01:50:58 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:58 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Adaptation currently occuring
+2021-05-13 01:50:58 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Checking constraints
+2021-05-13 01:50:58 INFO  GuavaMasterReportingPort:35 - ANALYSIS: [[Architecture Evaluator]]: Model KubeZnnSystem:Acme Errors: Still errors in: KubeZnnSystem.kubeZnnD.maxReplicasRule, 
+2021-05-13 01:50:58 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:58 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: [[Architecture Evaluator]]: Model KubeZnnSystem:Acme Errors: Still errors in: KubeZnnSystem.kubeZnnD.maxReplicasRule, 
+2021-05-13 01:50:59 INFO  DataLogger:200 - #adapt-select-begin
+2021-05-13 01:50:59 INFO  GuavaMasterReportingPort:35 - ADAPTATION_MANAGER: Checking if adaptation is required
+2021-05-13 01:50:59 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:59 INFO  Rainbow:694 - Delegate: master[ADAPTATION_MANAGER]: Checking if adaptation is required
+2021-05-13 01:50:59 INFO  GuavaMasterReportingPort:35 - ADAPTATION_MANAGER: No applicable Strategies to do an adaptation
+2021-05-13 01:50:59 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:59 INFO  DataLogger:202 - #adapt-select-end
+2021-05-13 01:50:59 INFO  Rainbow:694 - Delegate: master[ADAPTATION_MANAGER]: No applicable Strategies to do an adaptation
+2021-05-13 01:50:59 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[DELEGATE]: RD-b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[2021.05.13-01:50:59.695+0000]: Sending heartbeat.
+2021-05-13 01:50:59 INFO  GuavaMasterReportingPort:35 - MASTER: Heartbeat from b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4@127.0.0.1
+2021-05-13 01:50:59 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:50:59 INFO  Rainbow:694 - Delegate: master[MASTER]: Heartbeat from b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4@127.0.0.1
+2021-05-13 01:51:00 INFO  KubowProbe:41 - Probe ReplicasTextaProbe@127.0.0.1 has collected nothing
+2021-05-13 01:51:00 INFO  KubowProbe:41 - Probe ReplicasHighbProbe@127.0.0.1 has collected nothing
+2021-05-13 01:51:00 INFO  KubowProbe:41 - Probe ReplicasLowaProbe@127.0.0.1 has collected nothing
+2021-05-13 01:51:00 INFO  PrometheusProbe:49 - P[ReplicasLowbProbe@127.0.0.1] {"replicasLowb":2.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:51:00 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[ReplicasLowbProbe@127.0.0.1] {"replicasLowb":2.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:51:00 INFO  PrometheusProbe:49 - P[SloProbe@127.0.0.1] {"slo":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:51:00 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[SloProbe@127.0.0.1] {"slo":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:51:00 INFO  PrometheusProbe:49 - P[StabilityProbe@127.0.0.1] {"stability":0.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:51:00 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[StabilityProbe@127.0.0.1] {"stability":0.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:51:00 INFO  PrometheusProbe:49 - P[TrafficProbe@127.0.0.1] {"traffic":0.6,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:51:00 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[TrafficProbe@127.0.0.1] {"traffic":0.6,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:51:00 INFO  PrometheusProbe:49 - P[ReplicasHighaProbe@127.0.0.1] {"replicasHigha":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:51:00 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[ReplicasHighaProbe@127.0.0.1] {"replicasHigha":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:51:00 INFO  PrometheusProbe:49 - P[ReplicasTextbProbe@127.0.0.1] {"replicasTextb":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:51:00 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[PROBE]: P[ReplicasTextbProbe@127.0.0.1] {"replicasTextb":1.0,"namespace":"default","name":"kube-znn"}
+2021-05-13 01:51:00 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[ReplicasHighaGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"replicasHigha":1.0,"namespace":"default","name":"kube-znn"}, <replicasHigha>)])
+2021-05-13 01:51:00 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[ReplicasLowbGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"replicasLowb":2.0,"namespace":"default","name":"kube-znn"}, <replicasLowb>)])
+2021-05-13 01:51:00 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[SloGauge:KubowGaugeT@127.0.0.1]: kubeZnnS.setServiceProperty([{"slo":1.0,"namespace":"default","name":"kube-znn"}, <slo>)])
+2021-05-13 01:51:00 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[ReplicasTextbGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"replicasTextb":1.0,"namespace":"default","name":"kube-znn"}, <replicasTextb>)])
+2021-05-13 01:51:00 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[StabilityGauge:KubowGaugeT@127.0.0.1]: kubeZnnD.setDeploymentProperty([{"stability":0.0,"namespace":"default","name":"kube-znn"}, <stability>)])
+2021-05-13 01:51:00 INFO  Rainbow:694 - Delegate: b268aeb1-5f65-4a6f-8cbd-e015b29fb2d4[GAUGE]: G[TrafficGauge:KubowGaugeT@127.0.0.1]: kubeZnnS.setServiceProperty([{"traffic":0.6,"namespace":"default","name":"kube-znn"}, <traffic>)])
+2021-05-13 01:51:01 INFO  GuavaMasterReportingPort:35 - MODEL: Executing O[KubeZnnSystem:Acme/settraffic.kubeZnnS([{"traffic":0.6,"namespace":"default","name":"kube-znn"}])]<TrafficGauge:KubowGaugeT@127.0.0.1
+2021-05-13 01:51:01 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 01:51:01 INFO  Rainbow:694 - Delegate: master[MODEL]: Executing O[KubeZnnSystem:Acme/settraffic.kubeZnnS([{"traffic":0.6,"namespace":"default","name":"kube-znn"}])]<TrafficGauge:KubowGaugeT@127.0.0.1

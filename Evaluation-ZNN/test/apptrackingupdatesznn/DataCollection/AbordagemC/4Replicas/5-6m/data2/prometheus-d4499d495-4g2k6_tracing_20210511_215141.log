@@ -1,0 +1,18 @@
+level=warn ts=2021-05-12T00:48:13.613Z caller=main.go:284 deprecation_notice="'storage.tsdb.retention' flag is deprecated use 'storage.tsdb.retention.time' instead."
+level=info ts=2021-05-12T00:48:13.613Z caller=main.go:331 msg="Starting Prometheus" version="(version=2.16.0, branch=HEAD, revision=b90be6f32a33c03163d700e1452b54454ddce0ec)"
+level=info ts=2021-05-12T00:48:13.613Z caller=main.go:332 build_context="(go=go1.13.8, user=root@7ea0ae865f12, date=20200213-23:50:02)"
+level=info ts=2021-05-12T00:48:13.613Z caller=main.go:333 host_details="(Linux 4.19.157 #1 SMP Wed Jan 20 11:33:19 PST 2021 x86_64 prometheus-d4499d495-4g2k6 (none))"
+level=info ts=2021-05-12T00:48:13.613Z caller=main.go:334 fd_limits="(soft=1048576, hard=1048576)"
+level=info ts=2021-05-12T00:48:13.613Z caller=main.go:335 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2021-05-12T00:48:13.616Z caller=main.go:661 msg="Starting TSDB ..."
+level=info ts=2021-05-12T00:48:13.616Z caller=web.go:508 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2021-05-12T00:48:13.621Z caller=head.go:577 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2021-05-12T00:48:13.622Z caller=head.go:625 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=0
+level=info ts=2021-05-12T00:48:13.624Z caller=main.go:676 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2021-05-12T00:48:13.624Z caller=main.go:677 msg="TSDB started"
+level=info ts=2021-05-12T00:48:13.624Z caller=main.go:747 msg="Loading configuration file" filename=/etc/prometheus/prometheus.yaml
+level=info ts=2021-05-12T00:48:13.627Z caller=kubernetes.go:190 component="discovery manager scrape" discovery=k8s msg="Using pod service account via in-cluster config"
+level=info ts=2021-05-12T00:48:13.628Z caller=kubernetes.go:190 component="discovery manager scrape" discovery=k8s msg="Using pod service account via in-cluster config"
+level=info ts=2021-05-12T00:48:13.629Z caller=kubernetes.go:190 component="discovery manager scrape" discovery=k8s msg="Using pod service account via in-cluster config"
+level=info ts=2021-05-12T00:48:13.630Z caller=main.go:775 msg="Completed loading of configuration file" filename=/etc/prometheus/prometheus.yaml
+level=info ts=2021-05-12T00:48:13.630Z caller=main.go:630 msg="Server is ready to receive web requests."

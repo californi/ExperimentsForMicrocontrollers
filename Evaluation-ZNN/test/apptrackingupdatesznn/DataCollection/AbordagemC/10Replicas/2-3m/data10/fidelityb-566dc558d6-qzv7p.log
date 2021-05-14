@@ -1,0 +1,171 @@
+2021-05-13 21:50:44 INFO  KubowApplication:67 - Using target [system] located in path [targets]
+2021-05-13 21:50:44 INFO  KubowApplication:74 - Initializing rainbow master
+2021-05-13 21:50:45 INFO  Rainbow:442 - Unable to find host-specific property file! Will use general file insted. Tried: [fidelityb-566dc558d6-qzv7p, 172.17.0.17, localhost, 127.0.0.1]
+2021-05-13 21:50:46 INFO  ModelsManager:49 - Successfully loaded and registered KubeZnnSystem:Acme
+2021-05-13 21:50:46 INFO  GuavaMasterReportingPort:35 - MODEL: Successfully loaded and registered KubeZnnSystem:Acme
+2021-05-13 21:50:46 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:46 INFO  Rainbow:694 - Delegate: master[MODEL]: Successfully loaded and registered KubeZnnSystem:Acme
+2021-05-13 21:50:46 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Gauge Manager started.
+2021-05-13 21:50:46 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:46 INFO  GuavaMasterReportingPort:35 - EFFECTOR_MANAGER: Kubow EffectorManager started.
+2021-05-13 21:50:46 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:46 INFO  GuavaMasterReportingPort:35 - MASTER: Starting org.sa.rainbow.evaluator.acme.ArchEvaluator
+2021-05-13 21:50:46 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:46 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Gauge Manager started.
+2021-05-13 21:50:46 INFO  Rainbow:694 - Delegate: master[EFFECTOR_MANAGER]: Kubow EffectorManager started.
+2021-05-13 21:50:46 INFO  Rainbow:694 - Delegate: master[MASTER]: Starting org.sa.rainbow.evaluator.acme.ArchEvaluator
+2021-05-13 21:50:46 INFO  GuavaMasterReportingPort:35 - ANALYSIS: Architecture Evaluator started.
+2021-05-13 21:50:46 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:46 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: Architecture Evaluator started.
+2021-05-13 21:50:47 INFO  GuavaMasterReportingPort:35 - ADAPTATION_MANAGER: Parsed script /usr/share/kubow/targets/system/adaptation/strategies.s
+2021-05-13 21:50:47 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:47 INFO  GuavaMasterReportingPort:35 - ADAPTATION_MANAGER: Previously known script /usr/share/kubow/targets/system/adaptation/tactics.s
+2021-05-13 21:50:47 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:47 INFO  Rainbow:694 - Delegate: master[ADAPTATION_MANAGER]: Parsed script /usr/share/kubow/targets/system/adaptation/strategies.s
+2021-05-13 21:50:47 INFO  Rainbow:694 - Delegate: master[ADAPTATION_MANAGER]: Previously known script /usr/share/kubow/targets/system/adaptation/tactics.s
+2021-05-13 21:50:47 INFO  GuavaMasterReportingPort:35 - ADAPTATION_MANAGER: Kubow Adaptation Manager started.
+2021-05-13 21:50:47 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:47 INFO  Rainbow:694 - Delegate: master[ADAPTATION_MANAGER]: Kubow Adaptation Manager started.
+2021-05-13 21:50:47 INFO  GuavaMasterReportingPort:35 - EXECUTOR: Strategy executor initialized
+2021-05-13 21:50:47 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:47 INFO  GuavaMasterReportingPort:35 - EXECUTOR: Rainbow Strategy Executor started.
+2021-05-13 21:50:47 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:47 INFO  Rainbow:694 - Delegate: master[EXECUTOR]: Strategy executor initialized
+2021-05-13 21:50:47 INFO  Rainbow:694 - Delegate: master[EXECUTOR]: Rainbow Strategy Executor started.
+2021-05-13 21:50:47 INFO  Rainbow:532 - RM: Rainbow Master started.
+2021-05-13 21:50:47 INFO  KubowApplication:79 - Initialized rainbow master
+2021-05-13 21:50:47 INFO  KubowApplication:92 - Trying to initialize rainbow delegate
+2021-05-13 21:50:47 INFO  Rainbow:694 - Delegate: a30427ef-b007-46f0-bf31-fac222fe4081[DELEGATE]: RD-a30427ef-b007-46f0-bf31-fac222fe4081[2021.05.13-21:50:47.300+0000]: Attempting to connecto to master.
+2021-05-13 21:50:47 INFO  Rainbow:340 - Master created management connection with delegate a30427ef-b007-46f0-bf31-fac222fe4081
+2021-05-13 21:50:47 INFO  Rainbow:358 - Sending configuration information to a30427ef-b007-46f0-bf31-fac222fe4081.
+2021-05-13 21:50:47 INFO  Rainbow:694 - Delegate: a30427ef-b007-46f0-bf31-fac222fe4081[DELEGATE]: RD-a30427ef-b007-46f0-bf31-fac222fe4081[2021.05.13-21:50:47.320+0000]: Starting.
+2021-05-13 21:50:47 INFO  Rainbow:694 - Delegate: a30427ef-b007-46f0-bf31-fac222fe4081[DELEGATE]: RD-a30427ef-b007-46f0-bf31-fac222fe4081[2021.05.13-21:50:47.318+0000]: Received configuration information.
+2021-05-13 21:50:47 INFO  Rainbow:694 - Delegate: a30427ef-b007-46f0-bf31-fac222fe4081[DELEGATE]: RD-a30427ef-b007-46f0-bf31-fac222fe4081[2021.05.13-21:50:47.382+0000]: Rainbow Delegate started.
+2021-05-13 21:50:49 INFO  KubowProbe:29 - Probe DeploymentPropertiesProbe@127.0.0.1 initialized
+2021-05-13 21:50:49 INFO  KubowProbe:29 - Probe ReplicasHighaProbe@127.0.0.1 initialized
+2021-05-13 21:50:49 INFO  PrometheusClient:25 - Prometheus client successfully initialized for host http://prometheus.default.svc:9090
+2021-05-13 21:50:49 INFO  KubowProbe:29 - Probe ReplicasHighbProbe@127.0.0.1 initialized
+2021-05-13 21:50:49 INFO  PrometheusClient:25 - Prometheus client successfully initialized for host http://prometheus.default.svc:9090
+2021-05-13 21:50:49 INFO  KubowProbe:29 - Probe ReplicasLowaProbe@127.0.0.1 initialized
+2021-05-13 21:50:49 INFO  PrometheusClient:25 - Prometheus client successfully initialized for host http://prometheus.default.svc:9090
+2021-05-13 21:50:49 INFO  KubowProbe:29 - Probe ReplicasLowbProbe@127.0.0.1 initialized
+2021-05-13 21:50:49 INFO  PrometheusClient:25 - Prometheus client successfully initialized for host http://prometheus.default.svc:9090
+2021-05-13 21:50:49 INFO  KubowProbe:29 - Probe ReplicasTextaProbe@127.0.0.1 initialized
+2021-05-13 21:50:49 INFO  PrometheusClient:25 - Prometheus client successfully initialized for host http://prometheus.default.svc:9090
+2021-05-13 21:50:49 INFO  KubowProbe:29 - Probe ReplicasTextbProbe@127.0.0.1 initialized
+2021-05-13 21:50:49 INFO  PrometheusClient:25 - Prometheus client successfully initialized for host http://prometheus.default.svc:9090
+2021-05-13 21:50:49 INFO  KubowProbe:29 - Probe SloProbe@127.0.0.1 initialized
+2021-05-13 21:50:49 INFO  PrometheusClient:25 - Prometheus client successfully initialized for host http://prometheus.default.svc:9090
+2021-05-13 21:50:49 INFO  KubowProbe:29 - Probe StabilityProbe@127.0.0.1 initialized
+2021-05-13 21:50:49 INFO  PrometheusClient:25 - Prometheus client successfully initialized for host http://prometheus.default.svc:9090
+2021-05-13 21:50:49 INFO  KubowProbe:29 - Probe TrafficProbe@127.0.0.1 initialized
+2021-05-13 21:50:49 INFO  PrometheusClient:25 - Prometheus client successfully initialized for host http://prometheus.default.svc:9090
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Created KubeZnnInfoGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Gauge Manager: A gauge was created KubeZnnInfoGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Created KubeZnnInfoGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Gauge Manager: A gauge was created KubeZnnInfoGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: a30427ef-b007-46f0-bf31-fac222fe4081[GAUGE]: G - Kubow Gauge started.
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Created ReplicasHighaGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: a30427ef-b007-46f0-bf31-fac222fe4081[GAUGE]: G - Kubow Gauge started.
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: a30427ef-b007-46f0-bf31-fac222fe4081[GAUGE]: G - Kubow Gauge started.
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Gauge Manager: A gauge was created ReplicasHighaGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Created ReplicasHighaGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Created ReplicasLowbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Gauge Manager: A gauge was created ReplicasHighaGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: a30427ef-b007-46f0-bf31-fac222fe4081[GAUGE]: G - Kubow Gauge started.
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Gauge Manager: A gauge was created ReplicasLowbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Created ReplicasLowaGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Gauge Manager: A gauge was created ReplicasLowaGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: a30427ef-b007-46f0-bf31-fac222fe4081[GAUGE]: G - Kubow Gauge started.
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Created ReplicasLowbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: a30427ef-b007-46f0-bf31-fac222fe4081[GAUGE]: G - Kubow Gauge started.
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Created ReplicasHighbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Created ReplicasLowaGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: a30427ef-b007-46f0-bf31-fac222fe4081[GAUGE]: G - Kubow Gauge started.
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: a30427ef-b007-46f0-bf31-fac222fe4081[GAUGE]: G - Kubow Gauge started.
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Gauge Manager: A gauge was created ReplicasHighbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: a30427ef-b007-46f0-bf31-fac222fe4081[GAUGE]: G - Kubow Gauge started.
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: a30427ef-b007-46f0-bf31-fac222fe4081[GAUGE]: G - Kubow Gauge started.
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Gauge Manager: A gauge was created ReplicasLowbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Gauge Manager: A gauge was created ReplicasHighbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Created TrafficGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Gauge Manager: A gauge was created TrafficGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Created StabilityGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Gauge Manager: A gauge was created StabilityGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Created SloGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Gauge Manager: A gauge was created SloGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Created ReplicasTextbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Gauge Manager: A gauge was created ReplicasTextbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Created ReplicasTextaGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Gauge Manager: A gauge was created ReplicasTextaGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:49 INFO  KubowEffectorManager:146 - EffectorManager: An effector was created rollOut@127.0.0.1
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Created TrafficGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  RollOutEffector:128 - E[rollOut] + rollOut@127.0.0.1
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Created ReplicasHighbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Gauge Manager: A gauge was created ReplicasLowaGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Gauge Manager: A gauge was created ReplicasTextaGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Created ReplicasTextaGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Created StabilityGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  ScaleDownEffector:128 - E[scaleDown] + scaleDown@127.0.0.1
+2021-05-13 21:50:49 INFO  ScaleUpEffector:128 - E[scaleUp] + scaleUp@127.0.0.1
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: a30427ef-b007-46f0-bf31-fac222fe4081[EFFECTOR_MANAGER]: Java-based IEffector scaleDown
+2021-05-13 21:50:49 INFO  KubowEffectorManager:146 - EffectorManager: An effector was created scaleDown@127.0.0.1
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Gauge Manager: A gauge was created ReplicasTextbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Created ReplicasTextbGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Gauge Manager: A gauge was created SloGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  KubowEffectorManager:146 - EffectorManager: An effector was created scaleUp@127.0.0.1
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: ReplicasTextbGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Created SloGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Gauge Manager: A gauge was created StabilityGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Gauge Manager: A gauge was created TrafficGauge:KubowGaugeT@127.0.0.1
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: a30427ef-b007-46f0-bf31-fac222fe4081[EFFECTOR_MANAGER]: Java-based IEffector scaleUp
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: ReplicasLowaGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: ReplicasTextbGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: ReplicasLowbGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: ReplicasHighaGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: ReplicasLowbGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: ReplicasTextaGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: a30427ef-b007-46f0-bf31-fac222fe4081[EFFECTOR_MANAGER]: Java-based IEffector rollOut
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: ReplicasTextaGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: ReplicasHighaGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: ReplicasHighbGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: ReplicasLowaGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: KubeZnnInfoGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: KubeZnnInfoGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: ReplicasHighbGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: TrafficGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: StabilityGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: SloGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 21:50:49 INFO  GuavaMasterReportingPort:36 - 
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: TrafficGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: SloGauge:KubowGaugeT@127.0.0.1 was configured.
+2021-05-13 21:50:49 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: StabilityGauge:KubowGaugeT@127.0.0.1 was configured.

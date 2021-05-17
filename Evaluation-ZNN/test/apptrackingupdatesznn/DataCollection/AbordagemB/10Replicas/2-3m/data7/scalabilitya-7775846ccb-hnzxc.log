@@ -1,0 +1,58 @@
+2021-05-16 19:50:05 INFO  KubowApplication:67 - Using target [system] located in path [targets]
+2021-05-16 19:50:05 INFO  KubowApplication:74 - Initializing rainbow master
+2021-05-16 19:50:05 INFO  Rainbow:442 - Unable to find host-specific property file! Will use general file insted. Tried: [scalabilitya-7775846ccb-hnzxc, 172.18.0.12, localhost, 127.0.0.1]
+2021-05-16 19:50:07 INFO  ModelsManager:49 - Successfully loaded and registered KubeZnnSystem:Acme
+2021-05-16 19:50:07 INFO  GuavaMasterReportingPort:35 - MODEL: Successfully loaded and registered KubeZnnSystem:Acme
+2021-05-16 19:50:07 INFO  GuavaMasterReportingPort:36 - 
+2021-05-16 19:50:07 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Gauge Manager started.
+2021-05-16 19:50:07 INFO  GuavaMasterReportingPort:36 - 
+2021-05-16 19:50:07 INFO  Rainbow:694 - Delegate: master[MODEL]: Successfully loaded and registered KubeZnnSystem:Acme
+2021-05-16 19:50:07 INFO  Rainbow:694 - Delegate: master[GAUGE_MANAGER]: Gauge Manager started.
+2021-05-16 19:50:07 INFO  GuavaMasterReportingPort:35 - EFFECTOR_MANAGER: Kubow EffectorManager started.
+2021-05-16 19:50:07 INFO  GuavaMasterReportingPort:36 - 
+2021-05-16 19:50:07 INFO  GuavaMasterReportingPort:35 - MASTER: Starting org.sa.rainbow.evaluator.acme.ArchEvaluator
+2021-05-16 19:50:07 INFO  Rainbow:694 - Delegate: master[EFFECTOR_MANAGER]: Kubow EffectorManager started.
+2021-05-16 19:50:07 INFO  GuavaMasterReportingPort:36 - 
+2021-05-16 19:50:07 INFO  Rainbow:694 - Delegate: master[MASTER]: Starting org.sa.rainbow.evaluator.acme.ArchEvaluator
+2021-05-16 19:50:07 INFO  GuavaMasterReportingPort:35 - ANALYSIS: Architecture Evaluator started.
+2021-05-16 19:50:07 INFO  GuavaMasterReportingPort:36 - 
+2021-05-16 19:50:07 INFO  Rainbow:694 - Delegate: master[ANALYSIS]: Architecture Evaluator started.
+2021-05-16 19:50:08 INFO  GuavaMasterReportingPort:35 - ADAPTATION_MANAGER: Parsed script /usr/share/kubow/targets/system/adaptation/tactics.s
+2021-05-16 19:50:08 INFO  GuavaMasterReportingPort:36 - 
+2021-05-16 19:50:08 INFO  Rainbow:694 - Delegate: master[ADAPTATION_MANAGER]: Parsed script /usr/share/kubow/targets/system/adaptation/tactics.s
+2021-05-16 19:50:08 INFO  GuavaMasterReportingPort:35 - ADAPTATION_MANAGER: Parsed script /usr/share/kubow/targets/system/adaptation/strategies.s
+2021-05-16 19:50:08 INFO  GuavaMasterReportingPort:36 - 
+2021-05-16 19:50:08 INFO  Rainbow:694 - Delegate: master[ADAPTATION_MANAGER]: Parsed script /usr/share/kubow/targets/system/adaptation/strategies.s
+2021-05-16 19:50:08 INFO  GuavaMasterReportingPort:35 - ADAPTATION_MANAGER: Kubow Adaptation Manager started.
+2021-05-16 19:50:08 INFO  GuavaMasterReportingPort:36 - 
+2021-05-16 19:50:08 INFO  Rainbow:694 - Delegate: master[ADAPTATION_MANAGER]: Kubow Adaptation Manager started.
+2021-05-16 19:50:08 INFO  GuavaMasterReportingPort:35 - EXECUTOR: Strategy executor initialized
+2021-05-16 19:50:08 INFO  GuavaMasterReportingPort:36 - 
+2021-05-16 19:50:08 INFO  Rainbow:694 - Delegate: master[EXECUTOR]: Strategy executor initialized
+2021-05-16 19:50:08 INFO  GuavaMasterReportingPort:35 - EXECUTOR: Rainbow Strategy Executor started.
+2021-05-16 19:50:08 INFO  GuavaMasterReportingPort:36 - 
+2021-05-16 19:50:08 INFO  Rainbow:694 - Delegate: master[EXECUTOR]: Rainbow Strategy Executor started.
+2021-05-16 19:50:08 INFO  Rainbow:532 - RM: Rainbow Master started.
+2021-05-16 19:50:08 INFO  KubowApplication:79 - Initialized rainbow master
+2021-05-16 19:50:08 INFO  KubowApplication:92 - Trying to initialize rainbow delegate
+2021-05-16 19:50:08 INFO  Rainbow:694 - Delegate: d5870079-3402-42f6-ac20-95d3dced8491[DELEGATE]: RD-d5870079-3402-42f6-ac20-95d3dced8491[2021.05.16-19:50:08.438+0000]: Attempting to connecto to master.
+2021-05-16 19:50:08 INFO  Rainbow:340 - Master created management connection with delegate d5870079-3402-42f6-ac20-95d3dced8491
+2021-05-16 19:50:08 INFO  Rainbow:358 - Sending configuration information to d5870079-3402-42f6-ac20-95d3dced8491.
+2021-05-16 19:50:08 INFO  Rainbow:694 - Delegate: d5870079-3402-42f6-ac20-95d3dced8491[DELEGATE]: RD-d5870079-3402-42f6-ac20-95d3dced8491[2021.05.16-19:50:08.501+0000]: Received configuration information.
+2021-05-16 19:50:08 INFO  Rainbow:694 - Delegate: d5870079-3402-42f6-ac20-95d3dced8491[DELEGATE]: RD-d5870079-3402-42f6-ac20-95d3dced8491[2021.05.16-19:50:08.504+0000]: Starting.
+2021-05-16 19:50:08 INFO  Rainbow:694 - Delegate: d5870079-3402-42f6-ac20-95d3dced8491[DELEGATE]: RD-d5870079-3402-42f6-ac20-95d3dced8491[2021.05.16-19:50:08.506+0000]: Rainbow Delegate started.
+2021-05-16 19:50:10 INFO  KubowProbe:29 - Probe DeploymentPropertiesProbe@127.0.0.1 initialized
+2021-05-16 19:50:10 INFO  KubowProbe:29 - Probe ReplicasHighProbe@127.0.0.1 initialized
+2021-05-16 19:50:10 INFO  PrometheusClient:25 - Prometheus client successfully initialized for host http://prometheus.default.svc:9090
+2021-05-16 19:50:10 INFO  KubowProbe:29 - Probe ReplicasLowProbe@127.0.0.1 initialized
+2021-05-16 19:50:10 INFO  PrometheusClient:25 - Prometheus client successfully initialized for host http://prometheus.default.svc:9090
+2021-05-16 19:50:10 INFO  KubowProbe:29 - Probe ReplicasTextProbe@127.0.0.1 initialized
+2021-05-16 19:50:10 INFO  PrometheusClient:25 - Prometheus client successfully initialized for host http://prometheus.default.svc:9090
+2021-05-16 19:50:10 INFO  KubowProbe:29 - Probe SloProbe@127.0.0.1 initialized
+2021-05-16 19:50:10 INFO  PrometheusClient:25 - Prometheus client successfully initialized for host http://prometheus.default.svc:9090
+2021-05-16 19:50:10 INFO  KubowProbe:29 - Probe StabilityProbe@127.0.0.1 initialized
+2021-05-16 19:50:10 INFO  PrometheusClient:25 - Prometheus client successfully initialized for host http://prometheus.default.svc:9090
+2021-05-16 19:50:10 INFO  KubowProbe:29 - Probe TrafficProbe@127.0.0.1 initialized
+2021-05-16 19:50:10 INFO  PrometheusClient:25 - Prometheus client successfully initialized for host http://prometheus.default.svc:9090
+2021-05-16 19:50:10 INFO  GuavaMasterReportingPort:35 - GAUGE_MANAGER: Created KubeZnnInfoGauge:KubowGaugeT@127.0.0.1
+2021-05-16 19:50:10 INFO  GuavaMasterReportingPort:36 - 

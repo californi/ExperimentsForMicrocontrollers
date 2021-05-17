@@ -8,10 +8,12 @@ minikube addons enable ingress
 
 #---------------------------------------------------#---------------------------------------------------
 ## creating environment: Configuration A - Always - delete and re-create the Cluster
+kubectl apply -f ./Evaluation-ZNN/VersionC-WithFailureManagerMetaController/MetaController/priorityObjectsK8s/
 kubectl apply -k ./Evaluation-ZNN/tools/monitoring/
 kubectl apply -k ./Evaluation-ZNN/VersionA-Monolithic/TargetSystem/kube-znn/overlay/default/
 kubectl apply -f ./Evaluation-ZNN/tools/nginxc-ingress/
 kubectl apply -k ./Evaluation-ZNN/VersionA-Monolithic/kubow/overlay/kube-znn
+kubectl apply -f ./Evaluation-ZNN/VersionC-WithFailureManagerMetaController/MicroControllers/tailored_based/k8s/
 kubectl apply -k ./Evaluation-ZNN/tools/k6/
 
 kubectl delete -k ./Evaluation-ZNN/tools/monitoring/
@@ -21,11 +23,13 @@ kubectl delete -k ./Evaluation-ZNN/VersionA-Monolithic/kubow/overlay/kube-znn
 kubectl delete -k ./Evaluation-ZNN/tools/k6/
 #---------------------------------------------------#---------------------------------------------------
 ## creating environment: Configuration B - Always - delete and re-create the Cluster
+kubectl apply -f ./Evaluation-ZNN/VersionC-WithFailureManagerMetaController/MetaController/priorityObjectsK8s/
 kubectl apply -k ./Evaluation-ZNN/tools/monitoring/
 kubectl apply -k ./Evaluation-ZNN/VersionB-Microcontrollers/TargetSystem/kube-znn/overlay/default/
 kubectl apply -f ./Evaluation-ZNN/tools/nginxc-ingress/
 kubectl apply -k ./Evaluation-ZNN/VersionB-Microcontrollers/fidelitya_microcontroller/kubow/overlay/kube-znn/
 kubectl apply -k ./Evaluation-ZNN/VersionB-Microcontrollers/scalabilitya_microcontroller/kubow/overlay/kube-znn/
+kubectl apply -f ./Evaluation-ZNN/VersionC-WithFailureManagerMetaController/MicroControllers/tailored_based/k8s/
 kubectl apply -k ./Evaluation-ZNN/tools/k6/
 
 kubectl delete -k ./Evaluation-ZNN/tools/monitoring/

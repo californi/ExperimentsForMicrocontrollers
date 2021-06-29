@@ -1,0 +1,104 @@
+Reading file: .log
+Reading file: app.py
+Reading file: auxiliaryScripts
+Reading file: cpuAndMemory_20210629_011620.log
+Reading file: DataCollection
+Reading file: failuremanager-5447786f55-hjzn9.log
+Reading file: failuremonitor-747764f996-7944m.log
+Reading file: fidelitya-56f88bbb87-vdblz.log
+
+fidelitya data
+
+2021-06-29 03:59:00 : t0:raiseFidelity
+
+2021-06-29 04:00:30 : t0:lowerFidelity
+
+2021-06-29 04:00:45 : t0:lowerFidelity
+
+2021-06-29 04:01:00 : t0:lowerFidelity
+
+2021-06-29 04:01:15 : t0:lowerFidelity
+
+2021-06-29 04:01:30 : t0:lowerFidelity
+
+2021-06-29 04:01:45 : t0:lowerFidelity
+
+2021-06-29 04:02:00 : t0:lowerFidelity
+
+2021-06-29 04:02:15 : t0:lowerFidelity
+
+2021-06-29 04:02:30 : t0:lowerFidelity
+
+2021-06-29 04:02:45 : t0:lowerFidelity
+
+2021-06-29 04:03:00 : t0:lowerFidelity
+
+2021-06-29 04:03:15 : t0:lowerFidelity
+
+2021-06-29 04:03:30 : t0:lowerFidelity
+
+2021-06-29 04:03:45 : t0:lowerFidelity
+
+2021-06-29 04:04:00 : t0:lowerFidelity
+
+2021-06-29 04:04:15 : t0:lowerFidelity
+
+2021-06-29 04:04:30 : t0:lowerFidelity
+
+2021-06-29 04:04:45 : t0:lowerFidelity
+
+2021-06-29 04:05:00 : t0:lowerFidelity
+
+2021-06-29 04:05:15 : t0:lowerFidelity
+
+Reading file: generateLogs.sh
+Reading file: generateSummary.py
+Reading file: k6-tkgbk_tracing_20210629_010000.log
+Reading file: metacontroller-kubow-64f9d4469f-hsgx5.log
+
+MetaController data
+
+Reading file: metacontroller-kubow-64f9d4469f-hsgx5_tracing_20210629_010000.log
+
+MetaController data
+
+Reading file: MonitoringScenarios
+Reading file: Pilotos
+Reading file: readme
+Reading file: run.sh
+Reading file: sandbox.py
+Reading file: scalabilitya-7fd6667b4-n29wf_tracing_20210629_010000.log
+
+scalabilitya data
+
+2021-06-29 04:00:16 : t0:addReplica
+
+2021-06-29 04:00:21 : t0:addReplica
+
+2021-06-29 04:00:26 : t0:addReplica
+
+2021-06-29 04:05:31 : t0:removeReplica
+
+Reading file: summary-trace-znn.log
+Reading file: tempLogs
+Reading file: traceznn_20210629_010007.log
+
+Trace znn data
+
+{'name': 'kube-znn-db.168cf16a79e63580', 'type': 'Normal', 'message': 'Scaled up replica set kube-znn-db-67f755f69 to 1', 'dateevent': '2021-06-29 03:56:45+00:00', 'image': 'cmendes/znn:800k', 'replicas': 1, 'imageChanges': 0, 'replicasChanges': 1}
+
+{'name': 'kube-znn.168cf16a7aae6648', 'type': 'Normal', 'message': 'Scaled up replica set kube-znn-79dd5d6cb8 to 1', 'dateevent': '2021-06-29 03:56:45+00:00', 'image': 'cmendes/znn:800k', 'replicas': 1, 'imageChanges': 0, 'replicasChanges': 1}
+
+{'name': 'kube-znn.168cf19c235b28e8', 'type': 'Normal', 'message': 'Scaled up replica set kube-znn-79dd5d6cb8 to 2', 'dateevent': '2021-06-29 04:00:18+00:00', 'image': 'cmendes/znn:800k', 'replicas': 2, 'imageChanges': 0, 'replicasChanges': 2}
+
+{'name': 'kube-znn.168cf19ce3cac6fa', 'type': 'Normal', 'message': 'Scaled up replica set kube-znn-79dd5d6cb8 to 3', 'dateevent': '2021-06-29 04:00:21+00:00', 'image': 'cmendes/znn:800k', 'replicas': 3, 'imageChanges': 0, 'replicasChanges': 3}
+
+{'name': 'kube-znn.168cf19e15ba4c3b', 'type': 'Normal', 'message': 'Scaled up replica set kube-znn-79dd5d6cb8 to 4', 'dateevent': '2021-06-29 04:00:26+00:00', 'image': 'cmendes/znn:800k', 'replicas': 4, 'imageChanges': 0, 'replicasChanges': 4}
+
+{'name': 'kube-znn.168cf19f57cc537c', 'type': 'Normal', 'message': 'Scaled up replica set kube-znn-644ff8f5d6 to 1', 'dateevent': '2021-06-29 04:00:32+00:00', 'image': 'cmendes/znn:600k', 'replicas': 4, 'imageChanges': 1, 'replicasChanges': 4}
+
+{'name': 'kube-znn.168cf19f597ac58a', 'type': 'Normal', 'message': 'Scaled down replica set kube-znn-79dd5d6cb8 to 3', 'dateevent': '2021-06-29 04:00:32+00:00', 'image': 'cmendes/znn:600k', 'replicas': 4, 'imageChanges': 1, 'replicasChanges': 4}
+
+{'name': 'kube-znn.168cf19f5af4324f', 'type': 'Normal', 'message': 'Scaled up replica set kube-znn-644ff8f5d6 to 2', 'dateevent': '2021-06-29 04:00:32+00:00', 'image': 'cmendes/znn:600k', 'replicas': 4, 'imageChanges': 1, 'replicasChanges': 4}
+
+Reading file: usageOfMBCPU.py
